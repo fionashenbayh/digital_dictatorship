@@ -1,3 +1,10 @@
 theme: jekyll-theme-minimal
 title: DIGITAL DICTATORSHIP
 description: Course site for GOVT 403
+
+# Site navigation links
+- title: Assignments
+  url: /assignments/
+
+- title: Resources
+  url: /resources/
