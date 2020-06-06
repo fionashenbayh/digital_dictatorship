@@ -1,3 +1,7 @@
 theme: jekyll-theme-minimal
 title: DIGITAL DICTATORSHIP
 description: Course site for GOVT 403
+
+header_pages:
+  - about.md
+  - assignments.md
