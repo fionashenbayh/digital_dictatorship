@@ -2,55 +2,6 @@ theme: jekyll-theme-minimal
 title: DIGITAL DICTATORSHIP
 description: Course site for GOVT 403
 
-locale: en_US
-logo: # filename of a logo image that has been placed into your images directory
-
-# Enter the following platform usernames if you would like for them to appear on your site.
-owner:
-  name: Fiona Shen-Bayh
- # avatar: bio-photo.jpg
- # bio: "This is a sample Jekyll academic website."
-  email: fshenbayh@wm.edu
-  # Do not include the @ symbol in your Twitter username
-  twitter: fauxyona
-  #linkedin: #username
-  github: fionashenbayh
-  orcid: # ID Number (ex. 0000-0000-0000-0000)
-  researchgate: #username
-  mendeley: #username
-  google:
-    plus: #username
-    analytics:
-    verify:
-    scholar: #id
-  facebook: #username
-  instagram: #username
-  bing-verify:
-  stackoverflow: #123456/username from a "https://stackoverflow.com/users/123456/username" link
-  xing: #username
-  lastfm: #username
-  tumblr: #username
-  pinterest: #username
-  foursquare: #username
-  steam: #username
-  dribbble: #username
-  youtube: #username
-  soundcloud: #username
-  weibo: #username
-  flickr: #username
-  codepen: #username
-  disqus-shortname:
-
-# The following adjust the accents for your site. If you would like to further edit colors, fonts, font sizes, etc.
-# you may do so in _sass/variables.scss
-highlight-color: '#CC0000'
-lowlight-color: '#000'
-
-  # NOTE: If you would like your site to be licensed under a creative commons license, uncomment the 'yes' next to the type of license you wish to use.
-creative-commons:
-  cc-by: #yes
-  cc-by-nc: yes
-
 #DO NOT EDIT BEYOND THIS POINT
 # Jekyll configuration
 
