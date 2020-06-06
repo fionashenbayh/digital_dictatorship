@@ -1,5 +1,9 @@
 ---
+
 layout: page
-title: Assignments
+title: assignments
 permalink: /assignments/
+
 ---
+
+Assignments for GOVT 403
