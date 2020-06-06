@@ -5,4 +5,5 @@ description: Course site for GOVT 403
 
 header_pages:
   - about.md
+  - lessons.md
   - assignments.md
