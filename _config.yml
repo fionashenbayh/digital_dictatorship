@@ -1,4 +1,5 @@
-theme: jekyll-theme-minimal
+#theme: jekyll-theme-minimal
+remote_theme: pmarsceill/just-the-docs
 title: DIGITAL DICTATORSHIP
 description: Course site for GOVT 403
 
