@@ -4,8 +4,6 @@ title: About
 permalink: /about/
 ---
 
-# About
-
 Welcome to the course site for GOVT 403: Digital Dictatorships. Lectures and assignments will be regularly uploaded to this space.
 
 # Background
@@ -14,4 +12,4 @@ Dictatorship is one of the oldest forms of government in the world. In fact, the
 
 Studying these changes is crucial for understanding how modern dictatorships work. Yet, one of the main challenges to studying dictatorship – both then and now – is a lack of data on how these regimes truly operate. But recent advances in data science present new opportunities to research autocratic politics from a variety of digital platforms. 
 
-This course considers *digital dictatorship* from two dimensions – as both a strategy of autocratic survival (digital tools of control), and as a method of empirical inquiry (“big data” on autocratic politics). 
+This course considers *digital dictatorship* from two dimensions---as both a strategy of autocratic survival (digital tools of control), and as a method of empirical inquiry (“big data” on autocratic politics). 
