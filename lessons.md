@@ -1,5 +1,5 @@
 ---
 layout: page
-title: Lessons
-permalink: /lessons/
+title: Lectures
+permalink: /lectures/
 ---
