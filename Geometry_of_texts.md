@@ -1,3 +1,9 @@
+---
+layout: page
+title: Geometry of Texts
+permalink: /Geometry_of_texts/
+---
+
 # Exploring text with geometry
 
 In this lesson, we will learn how to:
