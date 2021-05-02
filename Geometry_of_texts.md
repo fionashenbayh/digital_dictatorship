@@ -4,19 +4,19 @@ title: Geometry of Texts
 permalink: /Geometry_of_texts/
 ---
 
-# Exploring text with geometry
+# Geometry of Texts
 
 In this lesson, we will learn how to:
 
 - create a document-term matrix
 
-- compare texts using geometry tools
+- compare texts using geometry
 
 - visualize distance between texts
 
 - cluster texts based on the distance between them
 
-Let's get started by importing the corpus of constitutions we worked with last week.
+Let's get started by importing a corpus of African constitutions.
 
 
 ```python
