@@ -8,7 +8,7 @@ header_pages:
   - about.md
   - syllabus.md
   - lectures.md
-    - Geometry_of_texts.md
+ #- Geometry_of_texts.md
   - resources.md
 
 # Information about where the book exists on the web
