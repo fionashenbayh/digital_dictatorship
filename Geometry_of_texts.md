@@ -481,12 +481,12 @@ For example, we can now easily calculate a measure of similarity between texts. 
 ### Euclidean distance
 
 One frequently used measure of distance between vectors (a measure easily converted into a measure of similarity) is Euclidean distance. The Euclidean distance between two vectors in a plane is the length of the hypotenuse that joins the two vectors. For instance, consider the Euclidean distance between the vectors x⃗ =(1,3)
-and y⃗ =(4,2). The distance between the two vectors is $\sqrt{(1−4)^2+(3−2)^2} = \sqrt{10}$.
+and y⃗ =(4,2). The distance between the two vectors is $$\sqrt{(1−4)^2+(3−2)^2} = \sqrt{10}$$.
 
 ![image.png](attachment:image.png)
 
 
-Generally speaking, given two vectors x⃗ and y⃗ in p-dimensional space, the Euclidean distance between the two vectors is given by $||x⃗ −y⃗ || = \sum_i^p\sqrt{(x_i−y_i)^2}$
+Generally speaking, given two vectors x⃗ and y⃗ in p-dimensional space, the Euclidean distance between the two vectors is given by $$||x⃗ −y⃗ || = \sum_i^p\sqrt{(x_i−y_i)^2}$$
 
 Because we have now expressed the constitutions in our corpus as vectors, we can calculate the Euclidean distance between any two constitutions. Conveniently, scikit-learn already has a function that is precisely for this task.
 
@@ -667,7 +667,7 @@ plt.show()
 
    
 
-<img src="Geometry_of_texts_files/Geometry Texts_42_0.png"> 
+<img src="{ site.baseurl }}/Geometry_of_texts_files/Geometry Texts_42_0.png"> 
     
 
 
@@ -710,7 +710,7 @@ plt.show()
 
 
 
-<img src="Geometry_of_texts_files/Geometry Texts_45_0.png"> 
+<img src="{ site.baseurl }}/Geometry_of_texts_files/Geometry Texts_45_0.png"> 
 
 
 
