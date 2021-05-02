@@ -1,0 +1,6 @@
+- file: about
+- file: syllabus
+- file: lectures
+  sections:
+    - file: Geometry_of_text
+- file: resources
