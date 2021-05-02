@@ -665,8 +665,9 @@ plt.show()
 ```
 
 
-    
-![png](Geometry%20Texts_files/Geometry%20Texts_42_0.png)
+   
+
+<img src="Geometry_of_texts_files/Geometry Texts_42_0.png"> 
     
 
 
@@ -707,10 +708,11 @@ plt.show()
 ```
 
 
-    
-![png](Geometry%20Texts_files/Geometry%20Texts_45_0.png)
 
-<img src="Geometry_of_texts_files/Geometry%20Texts_45_0.png">    
+
+<img src="Geometry_of_texts_files/Geometry Texts_45_0.png"> 
+
+
 
 
 # Exercises
