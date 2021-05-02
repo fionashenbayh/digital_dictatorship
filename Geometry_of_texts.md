@@ -666,8 +666,6 @@ plt.show()
 
 
    
-
-<img src="/Geometry_of_texts_files/Geometry Texts_42_0.png"> 
 ![Geometry Texts_42_0](/Geometry_of_texts_files/Geometry Texts_42_0.png)    
 
 
@@ -709,8 +707,6 @@ plt.show()
 
 
 
-
-<img src="/Geometry_of_texts_files/Geometry Texts_45_0.png"> 
 
 ![Geometry Texts_45_0](/Geometry_of_texts_files/Geometry Texts_45_0.png)
 
