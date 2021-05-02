@@ -709,7 +709,8 @@ plt.show()
 
     
 ![png](Geometry%20Texts_files/Geometry%20Texts_45_0.png)
-    
+
+<img src="Geometry%20Texts_files/Geometry%20Texts_45_0.png">    
 
 
 # Exercises
