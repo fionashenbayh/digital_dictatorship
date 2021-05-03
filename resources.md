@@ -5,7 +5,7 @@ permalink: /resources/
 ---
 
 
-# Datasets on autocratic regimes
+# Datasets
 
 [The Manifesto Project](https://manifesto-project.wzb.eu/){: .btn .btn-purple }
 
