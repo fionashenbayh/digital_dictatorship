@@ -1,3 +1,10 @@
+---
+layout: page
+title: Web Scraping
+permalink: /web_scrape_and_drive/
+parent: Lectures
+---
+
 ```python
 import requests, bs4, lxml, selenium
 ```
