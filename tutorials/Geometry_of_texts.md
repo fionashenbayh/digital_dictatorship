@@ -1,8 +1,9 @@
 ---
 layout: page
 title: Geometry of Texts
-permalink: /Geometry_of_texts/
+permalink: /tutorials/Geometry_of_texts/
 parent: Lectures
+nav_order: 2
 ---
 
 # Geometry of Texts
