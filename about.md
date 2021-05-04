@@ -5,8 +5,6 @@ permalink: /about/
 nav_order: 1
 ---
 
-Welcome to the course site for GOVT 403: Digital Dictatorship. Course content will be regularly uploaded to this space.
-
 ## Course Overview
 
 Dictatorship is one of the oldest forms of governance in the world. In fact, theories of autocratic rule have long informed our understanding of power, violence, and inequality, in both dictatorships and democracies alike. But modern technologies have complicated the ways in which dictatorships operate and presented new opportunities to study these regimes from different vantage points. 
