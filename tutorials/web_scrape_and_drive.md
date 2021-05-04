@@ -2,7 +2,7 @@
 layout: page
 title: Web Scraping
 permalink: /tutorials/web_scrape_and_drive/
-parent: Lectures
+parent: Tutorials
 nav_order: 1
 ---
 
