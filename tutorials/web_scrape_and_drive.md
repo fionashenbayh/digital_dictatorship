@@ -1,10 +1,12 @@
 ---
 layout: page
-title: Web Scraping
+title: Intro to Web Scraping
 permalink: /tutorials/web_scrape_and_drive/
 parent: Tutorials
 nav_order: 1
 ---
+
+This tutorial is a basic introduction to retrieving text data from the web using two approaches: web scraping---retrieve static HTML content---and web driving---creating a bot to interact with and retrieve data from a website.
 
 ```python
 import requests, bs4, lxml, selenium
