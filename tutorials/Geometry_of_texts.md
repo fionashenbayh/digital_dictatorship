@@ -2,7 +2,7 @@
 layout: page
 title: Geometry of Texts
 permalink: /tutorials/Geometry_of_texts/
-parent: Lectures
+parent: Tutorials
 nav_order: 2
 ---
 
