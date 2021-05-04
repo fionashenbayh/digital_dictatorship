@@ -8,6 +8,11 @@ permalink: /resources/
 ## Datasets
 {: .mb-lg-4}
 
+[The Digital Society Project](http://digitalsocietyproject.org/){: .btn }
+Data describing the intersection between politics and social media. Product of a global survey of hundreds of country and area experts, covering virtually all countries in the world from 2000 to 2020, including topics such as online censorship, polarization and politicization of social media, misinformation campaigns, coordinated information operations, and foreign influence in and monitoring of domestic politics.
+
+
+
 [The Manifesto Project](https://manifesto-project.wzb.eu/){: .btn }
 {: .mb-lg-4}
 
