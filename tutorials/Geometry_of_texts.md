@@ -14,9 +14,9 @@ In this lesson, we will learn how to:
 
 - compare texts using geometry
 
-- visualize distance between texts
+- visualize differences between texts
 
-- cluster texts based on the distance between them
+- cluster texts based on similarity
 
 Let's get started by importing a corpus of African constitutions.
 
