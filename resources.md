@@ -10,6 +10,7 @@ permalink: /resources/
 ## Datasets
 
 [Human Rights Data Analysis Group](https://hrdag.org/){: .btn }
+
 The Human Rights Data Analysis Group is a non-profit, non-partisan organization that applies rigorous science to the analysis of human rights violations around the world.
 
 [The Digital Society Project](http://digitalsocietyproject.org/){: .btn }
