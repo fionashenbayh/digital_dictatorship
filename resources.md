@@ -5,8 +5,12 @@ permalink: /resources/
 ---
 
 
+
+
 ## Datasets
-{: .mb-lg-4}
+
+[Human Rights Data Analysis Group](https://hrdag.org/){: .btn }
+The Human Rights Data Analysis Group is a non-profit, non-partisan organization that applies rigorous science to the analysis of human rights violations around the world.
 
 [The Digital Society Project](http://digitalsocietyproject.org/){: .btn }
 
@@ -14,7 +18,6 @@ Data describing the intersection between politics and social media around the wo
 
 
 [The Manifesto Project](https://manifesto-project.wzb.eu/){: .btn }
-{: .mb-lg-4}
 
 A digital corpus of political party manifestos from around the world. Includes 1000+ parties from 1945--present in over 50 countries on five continents.
 {: .mb-lg-4}
