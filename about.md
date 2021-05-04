@@ -21,4 +21,4 @@ This course considers *digital dictatorship* from two dimensions---as both a str
 
 ## About the Instructor
 
-Fiona Shen-Bayh is an Assistant Professor of Government at William & Mary where she also serves as a faculty affiliate of the Global Research Institute and the Data Science program. Her research examines the institutional dimensions of autocracy, including the legal and judicial instruments of autocratic rule, focusing on caes from sub-Saharan Africa.
+[Fiona Shen-Bayh](https://www.fionashenbayh.com/) is an Assistant Professor of Government at William & Mary where she also serves as a faculty affiliate of the Global Research Institute and the Data Science program. Her research examines the institutional dimensions of autocracy, including the legal and judicial instruments of autocratic rule, focusing on caes from sub-Saharan Africa.
