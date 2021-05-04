@@ -16,8 +16,8 @@ This course considers *digital dictatorship* from two dimensions---as both a str
 ## Learning Objectives
 
 1.	To develop theoretical understanding of dictatorship from a political science perspective
-2.	To learn how to analyze dictatorship using new sources of "big data"
-3.	To produce a prospectus that combines political science theory with data science tools
+2.	To analyze questions about dictatorship using new sources of "big data"
+3.	To produce an original research project that synthesizes political science theory with data science tools
 
 ## About the Instructor
 
