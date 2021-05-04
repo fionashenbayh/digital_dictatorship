@@ -1,8 +1,9 @@
 ---
 layout: page
 title: Web Scraping
-permalink: /web_scrape_and_drive/
+permalink: /tutorials/web_scrape_and_drive/
 parent: Lectures
+nav_order: 1
 ---
 
 ```python
