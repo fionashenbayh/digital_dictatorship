@@ -6,17 +6,27 @@ parent: Tutorials
 nav_order: 1
 ---
 
-This tutorial is a basic introduction to retrieving text data from the web using two approaches: web scraping---retrieve static HTML content---and web driving---creating a bot to interact with and retrieve data from a website.
+This tutorial is a basic introduction to retrieving text data from the web using two approaches: 
+
+1. web scraping: program a request to retrieve static content from a website
+2. web driving: create a bot to directly interact with (and download data from) a website
+
+## Web Scraping Modules
+
+The Python modules we will use to do a simple scrape are **Requests** and **Beautiful Soup**.
+
+Requests enables you to retrieve static HTML content from a website; Beautiful Soup is an HTML parser; meaning it converts HTML to readable text.
 
 ```python
 import requests, bs4, lxml, selenium
 ```
 
+Let's make a simple request.
 
 ```python
 response = requests.get('http://www.monitor.co.ug/News/National/Facebook-lawyer-Fred-Muwema/688334-3806268-mn7237/index.html')
 ```
-
+What does this look like? Pretty funky. Pretty hard to read. So let's make it legible using a parser.
 
 ```python
 soup = bs4.BeautifulSoup(response.text, "lxml")
@@ -484,86 +494,6 @@ for link in all_the_links:
     driver.close() #close the driver after each instance
   
 ```
-
-
-    ---------------------------------------------------------------------------
-
-    KeyboardInterrupt                         Traceback (most recent call last)
-
-    <ipython-input-40-e832f6bdf6e6> in <module>()
-         11     mini_dict = {} #create an empty dictionary to store each set of results
-         12     driver = webdriver.Chrome('/Users/Fiona_Shen_Bayh/Desktop/chromedriver')
-    ---> 13     driver.get(base_url + link)
-         14     title = driver.find_element_by_xpath('/html/body/section[2]/section/div/div/article/div/header/h1')
-         15     date = driver.find_element_by_xpath('/html/body/section[2]/section/div/div/article/div/header/h5')
-
-
-    /Users/Fiona_Shen_Bayh/anaconda/lib/python3.5/site-packages/selenium/webdriver/remote/webdriver.py in get(self, url)
-        246         Loads a web page in the current browser session.
-        247         """
-    --> 248         self.execute(Command.GET, {'url': url})
-        249 
-        250     @property
-
-
-    /Users/Fiona_Shen_Bayh/anaconda/lib/python3.5/site-packages/selenium/webdriver/remote/webdriver.py in execute(self, driver_command, params)
-        232 
-        233         params = self._wrap_value(params)
-    --> 234         response = self.command_executor.execute(driver_command, params)
-        235         if response:
-        236             self.error_handler.check_response(response)
-
-
-    /Users/Fiona_Shen_Bayh/anaconda/lib/python3.5/site-packages/selenium/webdriver/remote/remote_connection.py in execute(self, command, params)
-        406         path = string.Template(command_info[1]).substitute(params)
-        407         url = '%s%s' % (self._url, path)
-    --> 408         return self._request(command_info[0], url, body=data)
-        409 
-        410     def _request(self, method, url, body=None):
-
-
-    /Users/Fiona_Shen_Bayh/anaconda/lib/python3.5/site-packages/selenium/webdriver/remote/remote_connection.py in _request(self, method, url, body)
-        438             try:
-        439                 self._conn.request(method, parsed_url.path, body, headers)
-    --> 440                 resp = self._conn.getresponse()
-        441             except (httplib.HTTPException, socket.error):
-        442                 self._conn.close()
-
-
-    /Users/Fiona_Shen_Bayh/anaconda/lib/python3.5/http/client.py in getresponse(self)
-       1195         try:
-       1196             try:
-    -> 1197                 response.begin()
-       1198             except ConnectionError:
-       1199                 self.close()
-
-
-    /Users/Fiona_Shen_Bayh/anaconda/lib/python3.5/http/client.py in begin(self)
-        295         # read until we get a non-100 response
-        296         while True:
-    --> 297             version, status, reason = self._read_status()
-        298             if status != CONTINUE:
-        299                 break
-
-
-    /Users/Fiona_Shen_Bayh/anaconda/lib/python3.5/http/client.py in _read_status(self)
-        256 
-        257     def _read_status(self):
-    --> 258         line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
-        259         if len(line) > _MAXLINE:
-        260             raise LineTooLong("status line")
-
-
-    /Users/Fiona_Shen_Bayh/anaconda/lib/python3.5/socket.py in readinto(self, b)
-        573         while True:
-        574             try:
-    --> 575                 return self._sock.recv_into(b)
-        576             except timeout:
-        577                 self._timeout_occurred = True
-
-
-    KeyboardInterrupt: 
-
 
 
 ```python
