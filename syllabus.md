@@ -14,7 +14,8 @@ Week 1: Introduction
 
 Discuss overview of the course, learning expectations, data science resources
 
-Week 2: Defining dictatorship
+**Week 2: Defining dictatorship
+{: text-align: center}
 
 What is dictatorship? 
 
@@ -32,7 +33,7 @@ What is digital dictatorship?
 
 *Questions to keep in mind: does “digital” dictatorship seem to refer to something that is fundamentally different to dictatorships of eras past? Or are there more commonalities than differences? What kinds of data do these authors refer to? Does this data help us answer new questions; old questions?
 
-Week 3: Theories of Dictatorship
+**Week 3: Theories of Dictatorship
 
 Rules of the Game
 1.	Machiavelli, The Prince
