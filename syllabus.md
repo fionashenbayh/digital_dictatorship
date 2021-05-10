@@ -14,8 +14,8 @@ Week 1: Introduction
 
 Discuss overview of the course, learning expectations, data science resources
 
-**Week 2: Defining dictatorship
-{: text-align: center}
+**Week 2: Defining dictatorship**
+{: .label }
 
 What is dictatorship? 
 
@@ -27,13 +27,15 @@ What is dictatorship?
 
 What is digital dictatorship?
 
+
 1.	Kendall-Taylor, A., Frantz, E., & Wright, J. (2020). The digital dictators: How technology strengthens autocracy. Foreign Affairs, 99(2), 103-115.
 2.	Gunitsky, S. (2015). Corrupting the Cyber-Commons: Social Media as a Tool of Autocratic Stability. Perspectives on Politics, 13(1), 42-54. doi:10.1017/S1537592714003120
 3.	Guriev, Sergei, and Daniel Treisman. (2019). Informational Autocrats. Journal of Economic Perspectives, 33 (4): 100-127. DOI: 10.1257/jep.33.4.100
 
 *Questions to keep in mind: does “digital” dictatorship seem to refer to something that is fundamentally different to dictatorships of eras past? Or are there more commonalities than differences? What kinds of data do these authors refer to? Does this data help us answer new questions; old questions?
 
-**Week 3: Theories of Dictatorship
+**Week 3: Theories of Dictatorship**
+{: text-align: center}
 
 Rules of the Game
 1.	Machiavelli, The Prince
