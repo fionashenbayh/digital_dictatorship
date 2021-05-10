@@ -10,12 +10,11 @@ nav_order: 2
 Most up-to-date reading assignments will be posted here.
 
 
-Week 1: Introduction
+**Week 1: Introduction**
 
 Discuss overview of the course, learning expectations, data science resources
 
 **Week 2: Defining dictatorship**
-{: .label }
 
 What is dictatorship? 
 
@@ -26,7 +25,6 @@ What is dictatorship?
 *Questions to keep in mind: based on these readings, what is the most generic definition of autocracy you can come up with? Which parts of these canonical theories seem outdated; which parts seem timeless? Do empirical trends seem historical contingent or are there patterns that resonate with what we see today?*
 
 What is digital dictatorship?
-
 
 1.	Kendall-Taylor, A., Frantz, E., & Wright, J. (2020). The digital dictators: How technology strengthens autocracy. Foreign Affairs, 99(2), 103-115.
 2.	Gunitsky, S. (2015). Corrupting the Cyber-Commons: Social Media as a Tool of Autocratic Stability. Perspectives on Politics, 13(1), 42-54. doi:10.1017/S1537592714003120
@@ -51,7 +49,7 @@ Strategies of Survival: Co-optation and Repression
 3.	Truex, R. (2019). Focal Points, Dissident Calendars, and Preemptive Repression. Journal of Conflict Resolution, 63(4), 1032–1052. https://doi.org/10.1177/0022002718770520
 4.	Kilson, M. (1963). Authoritarian and Single-Party Tendencies in African Politics. World Politics, 15(2), 262-294. doi:10.2307/2009376
 
-Week 4: Data on Dictatorship
+**Week 4: Data on Dictatorship**
 
 Archival data
 1.	Esberg, J. (2020). Censorship as Reward: Evidence from Pop Culture Censorship in Chile. American Political Science Review, 114(3), 821-836. doi:10.1017/S000305542000026X
@@ -65,5 +63,5 @@ Survey and experimental data
 
 *Questions to keep in mind: What value do survey data provide for the study of dictatorship? What are the drawbacks of these data– how much (or little) information do you think we can glean about dictatorship from survey research?*
 
-Week 5: Digital Approaches to Dictatorship
+**Week 5: Digital Approaches to Dictatorship**
 
