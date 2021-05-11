@@ -31,15 +31,12 @@ nav_order: 2
 1.	Machiavelli, The Prince
 2.	De Mesquita et al. The Dictator’s Handbook, Chapter 1: “Rules of Politics” (blackboard)
 3.	Wintrobe, R. (2012). Autocracy and coups d'etat. Public Choice, 152(1/2), 115-130. www.jstor.org/stable/41483757
-4.	Egorov, G. and Sonin, K. (2011), Dictators and their Viziers: Endogenizing the Loyalty–Competence Trade‐Off. Journal of the European Economic Association, 9: 903-930. doi:10.1111/j.1542-4774.2011.01033.x
 
-###
-
-### Strategies of Survival: Co-optation and Repression
+### Strategies of Survival
 1.	Gandhi, J., & Przeworski, A. (2007). Authoritarian Institutions and the Survival of Autocrats. Comparative Political Studies, 40(11), 1279–1301. https://doi.org/10.1177/0010414007305817
-2.	Davenport. (2007). State Repression and Political Order. Annual Review of Political Science 10:1, 1-23.
+2.	Egorov, G. and Sonin, K. (2011), Dictators and their Viziers: Endogenizing the Loyalty–Competence Trade‐Off. Journal of the European Economic Association, 9: 903-930. doi:10.1111/j.1542-4774.2011.01033.x
 3.	Truex, R. (2019). Focal Points, Dissident Calendars, and Preemptive Repression. Journal of Conflict Resolution, 63(4), 1032–1052. https://doi.org/10.1177/0022002718770520
-4.	Kilson, M. (1963). Authoritarian and Single-Party Tendencies in African Politics. World Politics, 15(2), 262-294. doi:10.2307/2009376
+
 
 ## Week 4: Data on Dictatorship
 
