@@ -1,8 +1,10 @@
+-----
 layout: page
 title: Intro to Topic Modeling
 permalink: /tutorials/intro_to_topic_modeling/
 parent: Tutorials
 nav_order: 1
+-----
 
 # Topic Models
 
