@@ -820,7 +820,7 @@ plt.show()
 ```
 
 
-![png](tutorials/Intro\ to \Topic \Modeling_41_0.png)
+![png]({{"/tutorials/Intro\ to \Topic \Modeling_41_0.png"}})
 
 
 # An Interactive Topic Model Plot
