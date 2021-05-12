@@ -820,7 +820,7 @@ plt.show()
 ```
 
 
-![word_cloud](/tutorials/word_cloud.png)
+![word_cloud](word_cloud.png)
 
 
 # An Interactive Topic Model Plot
