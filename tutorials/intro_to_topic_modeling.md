@@ -16,8 +16,8 @@ The **key intuition** of a topic model is that we expect certain words to appear
 
 For example, we might expect that:
 
-- "dictator", "vizier", and "repression" will appear together more often in documents about autocrats
-- "democrat", "liberty", and "freedom" will appear together more ofen in documents about democrats
+> "dictator", "vizier", and "repression" will appear together more often in documents about **autocrats**
+> "democrat", "liberty", and "freedom" will appear together more ofen in documents about **democrats**
 
 These words can be construed as "topics" wherein a single document can contain multiple topics in different proportions. For example, 80% of a document may be devoted to the dictators topic and remaining 20% is devoted to the democrats topic. 
 
