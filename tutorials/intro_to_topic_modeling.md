@@ -12,14 +12,16 @@ This module provides an introduction to topic modeling.
 
 A topic model is a type of statistical model that helps identity "topics" that occur in a collection of documents, or corpus. This approach is particularly useful for synthesizing large corpora---e.g. thousands or millions of documents---that would be otherwise difficult to synthesize by hand. Imagine trying to read all of these documents by yourself and then summarizing which topics are common or unique across all of them! Topic models are a great way to make this process more efficient by leveraging statistical properties of natural language to categorize large bodies of text.
 
-The key intuition of a topic model is that we expect certain words to appear together in context if they refer to the same topic:
+The **key intuition** of a topic model is that we expect certain words to appear together in context if they refer to the same topic. 
+
+For example, we might expect that:
 
 - "dictator", "vizier", and "repression" will appear together more often in documents about autocrats
 - "democrat", "liberty", and "freedom" will appear together more ofen in documents about democrats
 
-These words can be construed as "topics", wherein a single document usually contains multiple topics in different proportions. For example, 80% of a document may be devoted to the dictator topic whereas 20% of the same document is devoted to the democrat topic. 
+These words can be construed as "topics" wherein a single document can contain multiple topics in different proportions. For example, 80% of a document may be devoted to the dictators topic and remaining 20% is devoted to the democrats topic. 
 
-This is the basic idea of a topic model: identify or clusters of words that co-occur (topics) in the corpus then classify all of the documents based on how representative they are of these topics.
+This is basically what a topic model does: leverage the statistical properties of texts to identify clusters of words that co-occur (i.e. topics); then use these word clusters to classify documents by topics.
 
 Let's walk through some popular approaches to this type of modeling and see what it can (and can't) tell us about a body of text.
 
