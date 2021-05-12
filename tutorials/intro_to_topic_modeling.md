@@ -656,7 +656,7 @@ Next, ***lemmatize*** each word to its root form, keeping only nouns, adjectives
 
 We keep only words with the allowed parts of speech tags (allowed_postags) because they are the ones contributing the most to the meaning of the sentences
 
-We use https://spacy.io/ for lemmatization.
+We use [Spacy](https://spacy.io/) for lemmatization.
 
 
 ```python
@@ -775,7 +775,7 @@ lda_model.print_topics() # the numbers are the probability weights of each word 
 
 # Wordcloud 
 
-The easiest visual we can make is a word cloud -- a plot that shows the top N words in each topic, with more frequent words being bigger in size
+The easiest visual we can make is a word cloud -- a plot that shows the top N words in each topic (more frequent words are larger)
 
 
 
@@ -820,7 +820,7 @@ plt.show()
 ```
 
 
-![png](tutorials/word_cloud.png)
+![word_cloud](/tutorials/word_cloud.png)
 
 
 # An Interactive Topic Model Plot
