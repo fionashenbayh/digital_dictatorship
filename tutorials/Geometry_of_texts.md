@@ -668,7 +668,7 @@ plt.show()
 
 
    
-![Geometry Texts_42_0](/Geometry_of_texts_files/Geometry Texts_42_0.png)    
+![](/Geometry_of_texts_files/Geometry Texts_42_0.png)    
 
 
 ### What does this plot actually show us? 
@@ -710,7 +710,7 @@ plt.show()
 
 
 
-![Geometry Texts_45_0](/Geometry_of_texts_files/Geometry Texts_45_0.png)
+![](/Geometry_of_texts_files/Geometry Texts_45_0.png)
 
 
 
