@@ -710,7 +710,7 @@ plt.show()
 
 
 
-![](Geometry_of_texts_files/Geometry Texts_45_0.png)
+![](Geometry_of_texts_files/Geometry Texts_45_0.png){width=100%}
 
 
 
