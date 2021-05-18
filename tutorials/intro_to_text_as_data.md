@@ -17,7 +17,7 @@ We could attempt to answer these questions using qualitative methods. For exampl
 
 But this type of deep reading is hard to scale. Imagine doing a deep read of a single document or a handful of documents; what if we had to read thousands, millions, or billions of texts? Would a single human reader be able to process all of this information?
 
-Rather than attempt to read a billion documents at human speed, we can leverage the statistical properties of text and computational tools to process texts at a much faster rate. **_This is the "text as data" approach._**
+Rather than attempt to read a billion documents at human speed, we can leverage the statistical properties of text and computational tools to process texts at a much faster rate. **This is the "text as data" approach.**
 
 Computational text analysis can reveal a suprising amount of information about the political world, such as [patterns of censorship in an autocratic regime](https://gking.harvard.edu/publications/how-censorship-china-allows-government-criticism-silences-collective-expression), [sources of partisan conflict in Congress](http://languagelog.ldc.upenn.edu/myl/Monroe.pdf), and why [repression sometimes fails to silence dissent](https://www.cambridge.org/core/journals/american-political-science-review/article/abs/how-saudi-crackdowns-fail-to-silence-online-dissent/1BA13DF8FD5D04EC181BCD4D1055254B).
 
@@ -194,7 +194,9 @@ sentence.split()
 
 
 
-We didn't specify how we wanted to split the string, so it defaulted to splitting on blank spaces. **This creates a list of words.** But we could instead specify that we wanted to split on some other text feature, like **punctuation.** Notice that splitting on punctuation changes the **list of words** to a **list of sentences.**
+We didn't specify how we wanted to split the string, so it defaulted to splitting on blank spaces. **This creates a list of words.** 
+
+But we could instead specify that we wanted to split on some other text feature, like **punctuation.** Notice that splitting on punctuation changes the **list of words** to a **list of sentences.**
 
 
 ```python
@@ -223,7 +225,7 @@ The idea is to **create a unit of analysis** -- whether it be a word, a sentence
 
 Let's apply some of these string manipulation tools to pre-process a document: an excerpt from Machiavelli's *The Prince.*
 
-Let's store the excerpt as a string.
+Let's store the excerpt as a string. Note: Triple quotes are used for strings that break across multiple lines
 
 
 ```python
@@ -250,7 +252,6 @@ are more difficult to find and sooner lapse. But when a prince is with his army,
 of soldiers, then it is quite necessary for him to disregard the reputation of cruelty, for without it he would never
 hold his army united or disposed to its duties. """
 
-# Note: Triple quotes are used for strings that break across multiple lines
 
 print(doc)
 ```
