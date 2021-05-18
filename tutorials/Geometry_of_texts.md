@@ -582,11 +582,17 @@ dist[1, 3] > dist[3, 4]
 
 If we want to use a measure of distance that takes into consideration the length of texts, we can calculate the cosine similarity by importing sklearn.metrics.pairwise.cosine_similarity and use it in place of euclidean_distances.
 
-Cosine similarity is a measure of similarity (rather than distance) that ranges between 0 and 1 (i.e. the cosine of the angle between two vectors). More specifically, it is a measure of similarity between two non-zero vectors of an inner product space that measures the cosine of the angle between them. It is thus a judgment of *orientation* and *not magnitude*: two vectors with the same orientation have a cosine similarity of 1, two vectors oriented at 90° relative to each other have a cosine similarity of 0, and two vectors diametrically opposed have a similarity of -1, independent of their magnitude. 
+Cosine similarity is a measure of similarity (rather than distance) that ranges between [0,1].
 
-The cosine similarity is advantageous because even if the two similar documents are far apart by the Euclidean distance (due to the size of the document), chances are they may still be oriented closer together. ___The smaller the angle, the higher the cosine similarity___.
+More specifically, it is a measure of similarity between two non-zero vectors of an inner product space that measures the cosine of the angle between them. _The smaller the angle, the higher the cosine similarity._
 
-In order to get a measure of distance (or dissimilarity), we need to “flip” the measure so that a larger angle receives a larger value. The distance measure derived from cosine similarity is therefore one minus the cosine similarity between two vectors.
+- Two vectors with the same orientation: cosine similarity score = 1
+- Two vectors with the opposite orientation: cosine similarity score = -1
+- Two vectors with orthogonol orientation (independent): cosine similarity score = 0
+
+Cosine similarity is useful because it isn't sensitive to the length of documents. This sets it apart from the Euclidean distance metric. 
+
+To measure distance (or dissimilarity), we can invert our cosine similarity score by substracting it from 1. This conversion ensure that larger angles receive higher values (i.e. greater distances).
 
 
 ```python
@@ -633,7 +639,17 @@ dist[1, 3] > dist[3, 4]
 
 ### Visualizing distances
 
-We can visualize the pairwise distances between our texts. A general approach is to assign a point in a plane to each text, making sure that the distance between points is proportional to the pairwise distances we calculated. This kind of visualization is common enough that it has a name, “multidimensional scaling” (MDS) and family of functions in scikit-learn.
+Once we vectorize our texts, we can plot them in vector space. Doing so let's us **visualize distances** between texts. 
+
+The problem is a text vector could have hundreds, thousands, or even more dimensions (think of the length of the vector).
+
+We can't (and shouldn't) try to plot these huge, multi-dimensional vectors. What we can do, however, is reshape them into more easily plotted objects.
+
+This is called **multidimensional scaling (MDS)**. MDS essentially transforms the information about the pairwise 'distances' among a corpus of $n$ texts into a configuration of $n$ points that can be mapped into an abstract Cartesian space.
+
+In other words, we want to assign a 2-dimensional point to each text in our corpus, while making sure that the distance between each of these points is proportional to the pairwise distances between each text.
+
+Thankfully there are pre-built MDS functions in Scikit-learn.
 
 
 ```python
@@ -677,13 +693,21 @@ plt.show()
 ![mds_plot](geo_image_2.png)    
 
 
-### What does this plot actually show us? 
+## What does this plot actually show us? 
 
-In the plotted figure above, we have created a visual representation of the pairwise distance between texts (where distance is represented by X and Y coordinates in a 2-dimensional plane). In looking at this figure, the values on the X and the Y axis are not substantively meaningful on their own, i.e. the 1961 South African Constitution having a coordinate value of (0.01, -0.45) doesn't tell us anything. Rather, what we care about here is the **distance between** the 1961 South African Constitution and any other constitution on the 2-D coordinate plane, e.g. the 1955 Constitution from Liberia or the 1964 Constitution from Zambia. This plot shows us that the South African Constitution is more similar to the 1955 Liberian Constitution than the 1964 Zambian Constitution.
+In the plotted figure above, we have created a visual representation of the pairwise distance between texts (where distance is represented by X and Y coordinates in a 2-dimensional plane). 
+
+Let's look at the values on the X and the Y axis. These coordinates are not substantively meaningful: e.g. that the 1961 South African Constitution has a coordinate value of (0.01, -0.45) doesn't tell us anything useful about the South African Constitution. 
+
+Rather, what we care about here is the **distance between** the 1961 South African Constitution and any other constitution on this plane, like the 1955 Constitution from Liberia or the 1964 Constitution from Zambia. 
+
+What this plot shows is that the South African Constitution is **more similar** to the 1955 Liberian Constitution than the 1964 Zambian Constitution.
 
 So it is the **distance between coordinate values** -- rather than the coordinate values themselves -- which provide substantive meaning.
 
-### Clustering texts based on distance
+---
+
+## Clustering texts based on distance
 
 One way to explore the corpus is to cluster texts into discrete groups of similar texts.
 
