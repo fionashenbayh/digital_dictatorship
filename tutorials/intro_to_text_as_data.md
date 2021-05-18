@@ -325,7 +325,7 @@ doc.replace('he','prince') # what happened here?
 
 Strings are case sensitive and **space sensitive**. In this case, the string replace function looked within `doc` for every instance of 'he' and replaced it with 'prince', including when 'he' was within another word.
 
-Hence __"whether"__ $\rightarrow$ __"wprincetprincer"__
+Hence __"whether"__  h<sub>&rightarrow;</sub>(x) __"wprincetprincer"__
 
 One way to prevent this is to add spaces in our replace function.
 
