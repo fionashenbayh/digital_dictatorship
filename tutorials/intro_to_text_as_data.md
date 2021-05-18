@@ -1,3 +1,12 @@
+---
+layout: page
+title: Text as Data
+permalink: /tutorials/intro_to_text_as_data/
+parent: Tutorials
+nav_order: 1
+---
+
+
 # Text as data
 
 How much information is contained in the written word? 
