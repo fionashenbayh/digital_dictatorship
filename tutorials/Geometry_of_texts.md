@@ -1,16 +1,16 @@
 ---
 layout: page
-title: Geometry of Texts
+title: Vectorizing Texts
 permalink: /tutorials/Geometry_of_texts/
 parent: Tutorials
 nav_order: 2
 ---
 
-# The Geometry of Texts
+# Vectorizing Texts
 
 When computers "read" texts, they aren't reading them the same way that humans read texts. A key task of the researcher is thus finding a way to convert the complexity of human language into terms that a computer can actually understand.
 
-This is what "natural language processing" means --- converting human-readable language to computer-readable language such that the computer can "understand" the content of texts in a way that a human wood. This process involves re-representing texts as vectors and matrices, wherein the numbers of each represent some quantity of a text, such as the frequency of certain words in a document or corpus.
+This is what "natural language processing" means --- converting human language to computer language such that the computer can "understand" the content of texts in a way that a human would. This process involves transforming texts into vectors (or matrices). Text vectors are just quantitative representations of texts; e.g., the numbers might represent the frequency of certain words in a document or corpus.
 
 In this lesson, we will learn how to:
 
