@@ -396,9 +396,6 @@ After making these simple modifications to the text, we can start doing some ana
 ```python
 positive_words = ['loved','greatness', 'advantage', 'opportunity', 'friendship']
 negative_words = ['feared', 'ungrateful', 'fickle', 'false', 'cowardly', 'covetous'] 
-
-# note: positive or negative sentiment is often dependent on the subject matter
-# a computer likely won't know the difference; but a human coder will
         
 len([w for w in words if w in positive_words])
 ```
