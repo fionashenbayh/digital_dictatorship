@@ -716,7 +716,7 @@ plt.show()
 
 
 
-![dendogram](/images/geo_image_1.png){width=100%}
+![dendogram](geo_image_1.png){width=100%}
 
 
 
