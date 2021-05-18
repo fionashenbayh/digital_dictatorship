@@ -17,7 +17,9 @@ We could attempt to answer these questions using qualitative methods. For exampl
 
 But this type of deep reading is hard to scale. Imagine doing a deep read of a single document or a handful of documents; what if we had to read thousands, millions, or billions of texts? Would a single human reader be able to process all of this information?
 
-Rather than attempt to read a billion documents at human speed, we can leverage the statistical properties of text and computational tools to process texts at a much faster rate. **This is the "text as data" approach.**
+Rather than attempt to read a billion documents at human speed, we can leverage the statistical properties of text and computational tools to process texts at a much faster rate. 
+
+**This is the "text as data" approach.**
 
 Computational text analysis can reveal a suprising amount of information about the political world, such as [patterns of censorship in an autocratic regime](https://gking.harvard.edu/publications/how-censorship-china-allows-government-criticism-silences-collective-expression), [sources of partisan conflict in Congress](http://languagelog.ldc.upenn.edu/myl/Monroe.pdf), and why [repression sometimes fails to silence dissent](https://www.cambridge.org/core/journals/american-political-science-review/article/abs/how-saudi-crackdowns-fail-to-silence-online-dissent/1BA13DF8FD5D04EC181BCD4D1055254B).
 
