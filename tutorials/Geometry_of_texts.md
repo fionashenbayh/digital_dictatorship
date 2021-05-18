@@ -674,7 +674,7 @@ plt.show()
 
 
    
-![](images/geo_image_1.png)    
+![mds_plot](/images/geo_image_2.png)    
 
 
 ### What does this plot actually show us? 
@@ -716,7 +716,7 @@ plt.show()
 
 
 
-![dendogram](images/geo_image_2.png){width=100%}
+![dendogram](/images/geo_image_1.png){width=100%}
 
 
 
