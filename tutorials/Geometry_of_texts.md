@@ -674,7 +674,7 @@ plt.show()
 
 
    
-![plot](/Geometry_of_texts_files/Geometry Texts_42_0.png)    
+![](images/geo_image_1.png)    
 
 
 ### What does this plot actually show us? 
@@ -716,7 +716,7 @@ plt.show()
 
 
 
-![dendogram](/Geometry_of_texts_files/Geometry Texts_45_0.png){width=100%}
+![dendogram](images/geo_image_2.png){width=100%}
 
 
 
