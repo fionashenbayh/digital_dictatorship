@@ -424,7 +424,9 @@ len([w for w in words if w in negative_words])
 
 Based on our very breezy analysis, Machiaveli seems pretty negative.
 
-### A better way: NLTK
+---
+
+## A Better Way: NLTK
 
 I've just shown you how to do basic pre-processing steps from scratch. When you're learning how to do computational text analysis, it's a good idea to start by writing your own functions so you understand exactly what steps you're taking and how you're editing your text. 
 
