@@ -63,7 +63,6 @@ filename
      'Constitution-Ghana-1969.txt',
      'Constitution-Rwanda-1962.txt',
      'Constitution-Liberia-1955.txt',
-     '.DS_Store',
      'Constitution-Ghana-1992.txt',
      'Constitution-Ghana-1979.txt',
      'Constitution-Guinea-1958.txt',
@@ -115,11 +114,13 @@ filename
 
 ## Creating a document-term matrix
 
-In order to perform machine learning on text documents, we first need to turn our text content into numerical feature vectors. Word (or n-gram) frequencies are typical units of analysis when working with text collections. It may come as a surprise that reducing a text to a list of word frequencies retains useful information, but practice has shown this to be the case. Treating texts as a list of word frequencies (a vector) also makes available a vast range of mathematical tools developed for studying and manipulating vectors.
+In order to perform machine learning on text documents, we first need to turn our text content into numerical feature vectors. 
+
+Word (or n-gram) frequencies are typical units of analysis when working with text collections. It may come as a surprise that reducing a text to a list of word frequencies retains useful information, but practice has shown this to be the case. Treating texts as a list of word frequencies (a vector) also makes available a vast range of mathematical tools developed for studying and manipulating vectors.
 
 In what follows, we will be working with the [CountVectorizer](http://scikit-learn.sourceforge.net/dev/modules/generated/sklearn.feature_extraction.text.CountVectorizer.html) class from the scikit-learn package. CountVectorizer gather word frequencies (or term frequencies) associated with texts into a document-term matrix.
 
-### Texts as vectors and matrices
+## Texts as vectors and matrices
 
 What does this vector look like? The most intuitive approach uses the bag of words assumption, i.e. counts each word individually.
 
