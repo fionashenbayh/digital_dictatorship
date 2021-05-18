@@ -8,6 +8,7 @@ header_pages:
   - about.md
   - syllabus.md
   - lectures.md
+  - intro_to_text_as_data.md
   - Geometry_of_texts.md
   - intro_to_topic_modeling.md
   - resources.md
