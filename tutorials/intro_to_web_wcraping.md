@@ -1,10 +1,10 @@
----
-layout: page
-title: Intro to Web Scraping
-permalink: /tutorials/web_scrape_and_drive/
-parent: Tutorials
-nav_order: 1
----
+#---
+#layout: page
+#title: Intro to Web Scraping
+#permalink: /tutorials/web_scrape_and_drive/
+#parent: Tutorials
+#nav_order: 4
+#---
 
 This tutorial is a basic introduction to retrieving text data from the web using two approaches: 
 
