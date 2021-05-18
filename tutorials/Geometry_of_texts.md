@@ -6,7 +6,11 @@ parent: Tutorials
 nav_order: 2
 ---
 
-# Geometry of Texts
+# The Geometry of Texts
+
+When computers "read" texts, they aren't reading them the same way that humans read texts. A key task of the researcher is thus finding a way to convert the complexity of human language into terms that a computer can actually understand.
+
+This is what "natural language processing" means --- converting human-readable language to computer-readable language such that the computer can "understand" the content of texts in a way that a human wood. This process involves re-representing texts as vectors and matrices, wherein the numbers of each represent some quantity of a text, such as the frequency of certain words in a document or corpus.
 
 In this lesson, we will learn how to:
 
@@ -18,7 +22,9 @@ In this lesson, we will learn how to:
 
 - cluster texts based on similarity
 
-Let's get started by importing a corpus of African constitutions.
+---
+
+Let's get started by importing a corpus of autocratic constitutions. In particular, this constitutions corpus includes several one-party regimes from postcolonial Africa.
 
 
 ```python
@@ -668,7 +674,7 @@ plt.show()
 
 
    
-![](Geometry_of_texts_files/Geometry Texts_42_0.png)    
+![plot](/Geometry_of_texts_files/Geometry Texts_42_0.png)    
 
 
 ### What does this plot actually show us? 
@@ -710,7 +716,7 @@ plt.show()
 
 
 
-![](Geometry_of_texts_files/Geometry Texts_45_0.png){width=100%}
+![dendogram](/Geometry_of_texts_files/Geometry Texts_45_0.png){width=100%}
 
 
 
