@@ -121,14 +121,11 @@ filename
      'Constitution-Ghana-1972.txt']
 
 
-
-## Creating a term-document matrix
-
 What's an efficient way of summarizing our corpus? 
 
 We could create a **document-term matrix** (AKA term-document matrix, depending on how you sort your rows and columns).
 
-A document-term matrix represents the frequency of terms (words) that occur in a particular collection of documents. 
+A document-term matrix represents the frequency of terms (words) that occur in a particular collection of documents.
 
 - rows correspond to documents in the corpus
 - documents correspond to terms 
@@ -139,22 +136,15 @@ Each cell in the matrix represents a measure of how many times a particular word
 
 To get an intuition behind this set-up, look at the following example:
 
-![docs_matrix](docs_matrix.png)
+![docs_matrix](docs_matrix.png){ width=70% }
 
-We will be working with the [CountVectorizer](http://scikit-learn.sourceforge.net/dev/modules/generated/sklearn.feature_extraction.text.CountVectorizer.html) class from the scikit-learn package. CountVectorizer gather word frequencies (or term frequencies) associated with texts into a document-term matrix.
+Notice above that the dimensions of the matrix are the number of documents (rows) by the total number of unique terms (columns). The number of columns of a document-term matrix is thus the length of the **corpus vocabulary.**
 
-## Texts as vectors and matrices
+Is this a reasonable way to summarize a corpus of texts? Perhaps. The answer to this question ultimately depends on your research question, that is, what kind of information are you trying to analyze in the texts? For now, we'll take for granted that representing a corpus as a matrix is reasonable based on the [bag of words](https://en.wikipedia.org/wiki/Bag-of-words_model) assumption.
 
-What does this vector look like? The most intuitive approach uses the bag of words assumption, i.e. counts each word individually.
+## Creating the document-term matrix
 
-- Create a dictionary of word features that assigns an integer ID to each word ( *W* ) occurring in any document, _d_
-
-- For each document _i_, count the number of occurrences of each word ( *W* ) 
-
-- Create a vector X_d[ *i, j* ], where _i_ counts the number of times each word from the dictionary appears in a given document, d, and *j* is the index of that word in the dictionary of word features
-
-Our document-term matrix will consist of all of the vectors X_d, i.e. a vector *X* for each document _d_ in our corpus.
-
+There are lots of existing packages that will generate a document-term matrix from an existing corpus. We will be working with the [CountVectorizer](http://scikit-learn.sourceforge.net/dev/modules/generated/sklearn.feature_extraction.text.CountVectorizer.html) class from the scikit-learn package.
 
 ```python
 import numpy as np  # a conventional alias for numpy, this package allows us to perform array operations on our matrix
@@ -162,9 +152,7 @@ import numpy as np  # a conventional alias for numpy, this package allows us to 
 from sklearn.feature_extraction.text import CountVectorizer
 ```
 
-### CountVectorizer Class
-
-The CountVectorizer class will create a document-term matrix using our corpus of constitutions. CountVectorizer is customizable according to the following specifications.
+The document-term matrix is created by invoking the CountVectorizer class, which can be customized as follows:
 
 - <span style="color:blue"> **encoding** </span> : ‘utf-8’ by default
 - <span style="color:blue"> **lowercase** </span> : (default <span style="color:green"> **True** </span> ) convert all text to lowercase before tokenizing
@@ -189,10 +177,92 @@ dtm = vectorizer.fit_transform(raw_documents=constitutions.abspaths())  # .abspa
 vocab = vectorizer.get_feature_names()  # a list
 ```
 
-We now have a document-term matrix (dtm) and a vocabulary list (vocab)! 
+And that's it! We now have a document-term matrix (dtm) and a vocabulary list (vocab)! 
 
-Let's take a look at what we have created.
+Let's take a look at what we have created, starting with its dimensions.
 
+```python
+dtm.shape 
+```
+
+
+
+
+    (56, 2564)
+
+
+What do you notice about the dimensions of this matrix?
+
+
+```python
+type(vocab), len(vocab)
+```
+
+
+
+
+    (list, 2564)
+
+
+And what do you notice about the length of the vocab?
+
+```python
+vocab
+```
+
+
+
+
+    ['able',
+     'abolish',
+     'abolished',
+     'abolition',
+     'abroad',
+     'absence',
+     'absent',
+     'absolute',
+     'ac',
+     'accepted',
+     'accepts',
+     ...]
+
+
+
+Test out different values for **min_df** and rerun the CountVectorizer function. How does this change the size of dtm and the vocab? Is it sensitive to small changes?
+
+A cusory glance at the vocabulary reveals that many of the strings included as terms are just numbers. Do you want to keep these numbers in your analysis? If not, how would you adjust the CountVectorizer function to remove them?
+
+We can use regular expressions with `token_pattern`.
+
+
+```python
+vectorizer = CountVectorizer(input='filename', 
+                             encoding= 'ISO-8859-1',
+                             stop_words='english',
+                             min_df = 15,
+                             decode_error='ignore', 
+                            token_pattern=r'\b[^\d\W]+\b') # regular expression to capture non-digit words
+
+dtm = vectorizer.fit_transform(raw_documents=constitutions.abspaths())  # .abspaths() provides the absolute filepath to every document in our corpus
+
+vocab = vectorizer.get_feature_names()  # a list
+```
+
+
+```python
+dtm.shape
+```
+
+
+
+
+    (56, 1887)
+
+
+
+## A Sparse Matrix
+
+What does our dtm actually look like? Let's take a peek.
 
 ```python
 dtm
@@ -253,89 +323,11 @@ print(dtm)
 
 
 
-```python
-dtm.shape # dimensions of the matrix -- what do you notice about the size of this object?
-```
-
-
-
-
-    (56, 2564)
-
-
+What do all of these numbers mean? Where are the terms from our vocabulary? What we're looking at here is a special type of matrix object: a sparse matrix.
 
 
 ```python
-type(vocab), len(vocab) # what do you notice about the length of vocab?
-```
-
-
-
-
-    (list, 2564)
-
-
-
-
-```python
-vocab
-```
-
-
-
-
-    ['able',
-     'abolish',
-     'abolished',
-     'abolition',
-     'abroad',
-     'absence',
-     'absent',
-     'absolute',
-     'ac',
-     'accepted',
-     'accepts',
-     ...]
-
-
-
-Try different values for **min_df** and rerun the CountVectorizer function. How does this change the size of dtm and the vocab?
-
-Also note that many strings in our vocab list are numeric. Do you want to keep these numbers in your analysis? If not, how would you adjust the CountVectorizer function to remove them?
-
-
-```python
-vectorizer = CountVectorizer(input='filename', 
-                             encoding= 'ISO-8859-1',
-                             stop_words='english',
-                             min_df = 15,
-                             decode_error='ignore', 
-                            token_pattern=r'\b[^\d\W]+\b') # regular expression to capture non-digit words
-
-dtm = vectorizer.fit_transform(raw_documents=constitutions.abspaths())  # .abspaths() provides the absolute filepath to every document in our corpus
-
-vocab = vectorizer.get_feature_names()  # a list
-```
-
-
-```python
-dtm.shape
-```
-
-
-
-
-    (56, 1887)
-
-
-
-### The document term matrix
-
-Countvectorizer returns a certain type of matrix object.
-
-
-```python
-dtm # the dtm is currently a sparse matrix
+dtm
 ```
 
 
@@ -346,13 +338,15 @@ dtm # the dtm is currently a sparse matrix
 
 
 
-### What is a sparse matrix?
+# What is a sparse matrix and why is this what CountVectorizer returns?
 
-Imagine you have a matrix with hundreds of thousands of elements and only a few of those elements contain non-zero values. Most text data is like this because of the way we are representing the texts as word counts across the entire corpora. While we could look at the entire matrix with all of its zero *and* nonzero entries (a.k.a. **dense matrix**), there are much more efficient methods of dealing with such data.
+To answer this question, we have to think about how much information is actually contained in a document-term matrix. Most document-term matrices have a lot of zero values (empty cells). Why? Remember that the columns of a dtm represent the unique vocab terms _across the entire corpus_; it is highly unlikely that every document in the corpus uses exactly the same terms. And whenever a term isn't present in a document, there will be a zero entry. 
 
-A **sparse matrix** is a special type of data structure that only records **non-zero entries**, which is much more efficient in terms of memory and computing time. This is why CountVectorizer returns a sparse matrix by default.
+Now think about how your computer handles data. Imagine you have a document-term matrix with hundreds or thousands of elements and only a few of those elements contain non-zero values. We could try to look at the full matrix with all of its zero *and* nonzero entries (**dense matrix**), there are much more efficient methods of dealing with such data. And efficiency means our computer reads faster.
 
-When we look at the CountVectorizer dtm object, we can see how a sparse matrix is structured. There are two arrays printed below, where the first array points to the index of a non-zero entry (i.e. the word), and the second array contains the value of that non-zero entry (i.e. the word count). 
+A **sparse matrix** is one that only records **non-zero entries**, which is much more efficient in terms of memory and computing time. This is why CountVectorizer returns a sparse matrix by default.
+
+Let's look at our dtm again. 
 
 
 ```python
@@ -411,10 +405,12 @@ print(dtm) # this is what the sparse matrix looks like
       (55, 1419)	1
       (55, 697)	194
 
+Looking at this dtm object, we can see how a sparse matrix is structured: there are two arrays printed above; the first array points to the index of a non-zero entry (i.e. the row, column location of the term), and the second array contains the value of that non-zero entry (i.e. the term count). 
+
 
 ### Coverting to numpy array
 
-Before we can query the matrix and discover how many times certain words appear in each constitution, we need to convert this matrix from its current format, a sparse matrix, into a normal NumPy array. We will also convert the Python list storing our vocabulary, vocab, into a NumPy array, because array objects support more operations than a list.
+Before we keep going, let's convert our sparse matrix `dtm` into a normal NumPy array; let's also convert our vocabulary object `vocab` into a NumPy array. We do this because array objects support more operations than matrices and lists.
 
 
 ```python
@@ -466,7 +462,7 @@ print(vocab)
 
 
 ### Exploring the dtm
-With this preparatory work behind us, querying the document-term matrix is simple. Below, here are two ways to find out how many times the word ‘president’ appears in the first document (constitution) in our corpus.
+With this preparatory work behind us, it's simple to make queries with our document-term matrix. Here are two ways to find out how many times the word ‘president’ appears in the first constitution.
 
 
 ```python
