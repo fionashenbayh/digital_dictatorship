@@ -120,16 +120,19 @@ filename
 
 ## Creating a document-term matrix
 
-This corpus has several autocratic constitutions---too many to display all at once (imagine opening all of these documents on your computer...I already have too many tabs open). What's an efficient way of summarizing our ENTIRE autocratic constitutions corpus at once? 
+What's an efficient way of summarizing our corpus? 
 
 We could create a **document-term matrix** (dtm).
 
-A dtm is a matrix that shows the frequency of terms that occur in a collection of documents (corpus). 
+A dtm is a matrix that represents the frequency of terms (words) that occur in a particular collection of documents. 
 
 - rows correspond to documents in the corpus
 - columns correspond to terms
 
-Each ij cell, then, is the number of times word j occurs in document i. As such, each row is a vector of term counts that represents the content of the document corresponding to that row. For instance if one has the following two (short) document
+
+
+
+Each cell, then, is the number of times word j occurs in document i. As such, each row is a vector of term counts that represents the content of the document corresponding to that row. For instance if one has the following two (short) document
 
 We will be working with the [CountVectorizer](http://scikit-learn.sourceforge.net/dev/modules/generated/sklearn.feature_extraction.text.CountVectorizer.html) class from the scikit-learn package. CountVectorizer gather word frequencies (or term frequencies) associated with texts into a document-term matrix.
 
