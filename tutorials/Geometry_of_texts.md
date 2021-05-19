@@ -8,11 +8,19 @@ nav_order: 2
 
 # Vectorizing Texts
 
-When computers "read" texts, they aren't reading them the same way that humans read texts. A key task of the researcher is thus finding a way to convert the complexity of human language into terms that a computer can actually understand.
+When computers "read" texts, they aren't reading them the same way that humans do. Computers are "reading" texts as [string bits](https://groups.csail.mit.edu/mac/ftpdir/scheme-7.4/doc-html/scheme_10.html), wherein bits are data with binary [0,1] structures. These data provide the computer with instructions for displaying text, sound, or images, but this doesn't mean the computer is able to comprehend the _meaning_ of those data, at least not in the same way that humans would be able to. 
 
-This is what "natural language processing" means --- converting human language to computer language such that the computer can "understand" the content of texts in a way that a human would. This process involves transforming texts into vectors (or matrices). Text vectors are just quantitative representations of texts; e.g., the numbers might represent the frequency of certain words in a document or corpus.
+Computers actually need a lot of help interpreting the content of texts, for example, labeling positive or negative sentiment, identifying topics in a corpus, and understanding the implications of this content on broader political phenomena.
 
-In this lesson, we will learn how to:
+A key task of the researcher is finding a way to convert the complexity of human language into terms that a computer can actually comprehend. This is what "natural language processing" means --- converting human language to computer language such that the computer can "understand" the content of texts in a way that a human would. 
+
+This process involves transforming texts into vectors (or matrices). Text vectors are just quantitative representations of texts; e.g., the numbers might represent the frequency of certain words in a document or corpus.
+
+Full disclosure: the vast majority of time that you spend on text analysis will be on converting or "cleaning" your text data. Also known as **pre-processing**.
+
+---
+
+In what follows, we will see how to:
 
 - create a document-term matrix
 
@@ -24,7 +32,7 @@ In this lesson, we will learn how to:
 
 ---
 
-Let's get started by importing a corpus of autocratic constitutions. In particular, this constitutions corpus includes several one-party regimes from postcolonial Africa.
+Let's get started by importing a corpus of autocratic constitutions. In particular, this corpus includes constitutions for postcolonial African one-party regimes.
 
 
 ```python
