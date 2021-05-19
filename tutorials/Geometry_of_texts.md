@@ -8,15 +8,17 @@ nav_order: 2
 
 # Vectorizing Texts
 
-When computers "read" texts, they aren't reading them the same way that humans do. Computers are actually "reading" texts as [string bits](https://groups.csail.mit.edu/mac/ftpdir/scheme-7.4/doc-html/scheme_10.html), wherein bits are data with binary [0,1] structure. This information provides the computer with instructions for displaying text, sound, or images; but this doesn't mean the computer understands the _meaning_ or _content_ of those data---at least not in the same way that humans do.
+When computers "read" texts, they aren't reading them the same way that humans do. Computers are actually interpreting texts as [string bits](https://groups.csail.mit.edu/mac/ftpdir/scheme-7.4/doc-html/scheme_10.html), wherein bits are binary code (1, 0). This information provides the computer with instructions for displaying text, sound, or images; but being able to process 1s and 0s doesn't mean a computer literally understands the _meaning_ or _content_ of these data---at least not in the same way that humans do.
 
-A key task of the researcher who wants to do a computational text analysis is first finding a way to convert the complexity of human language into terms that a computer can actually understand. This is what **natural language processing** means: converting human language to computer language such that the computer can read texts like a human would and thus produce meaningful text analysis.
+A key task of any computational text analysis is first finding a way to convert the complexity of human language into terms that a computer can actually understand. This is what **natural language processing** means: converting human language to computer language such that the computer reads texts like a human would.
 
-A central part of natural language processing involves transforming texts into vectors (or matrices). Vectors are objects that lend themselves to a variety of computational operations, making them an ideal data structure for running computational text analysis. Note that text vectors are quantitative representations of qualitative information. Below, we'll see how to vectorize texts and what kinds of tools can be applied once we make this conversion.
+To this end, natural language processing involves transforming texts into vectors (or matrices). Vectors are objects that lend themselves to a variety of computational operations in Python, making them an ideal data structure for running computational text analysis. Remember that text vectors are just quantitative representations of qualitative information---it's a translation of our texts into a format that our computer is able to read. 
+
+Here's what this process looks like in practice:
 
 ![dtm_workflow](dtm_workflow.png)*Converting Texts to Vectors* 
 
-Full disclosure: Computers need A LOT of help interpreting text as data. The vast majority of time that you spend on text analysis will be on converting or "cleaning" your text data, AKA "pre-processing."
+Full disclosure: Computers need A LOT of help interpreting text as data. Trust me when I say that the **vast majority** of time that you spend on text analysis will be devoted to converting or "cleaning" your texts in **preparation** for analysis. We call this the "pre-processing" stage. It is a long stage.
 
 ---
 
