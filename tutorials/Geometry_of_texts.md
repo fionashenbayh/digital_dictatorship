@@ -10,11 +10,11 @@ nav_order: 2
 
 When computers "read" texts, they aren't reading them the same way that humans do. Computers are "reading" texts as [string bits](https://groups.csail.mit.edu/mac/ftpdir/scheme-7.4/doc-html/scheme_10.html), wherein bits are data with binary [0,1] structure. This information provides the computer with instructions for displaying text, sound, or images; but this doesn't mean the computer is able to understand the _meaning_ of those data---at least not in the same way that humans would be able to. 
 
-Computers need a lot of help interpreting text data, or processing it in a way that would be meaningful to humans. A key task of the researcher is thus finding a way to convert the complexity of human language into terms that a computer can actually comprehend. This is what **natural language processing** means: converting human language to computer language such that the computer can understand the texts it's reading and produce meaningful analysis.
+A key task of the researcher is finding a way to convert the complexity of human language into terms that a computer can actually comprehend. This is what **natural language processing** means: converting human language to computer language such that the computer can read texts like a human would and thus produce meaningful text analysis.
 
 A central part of natural language processing involves transforming texts into vectors (or matrices). Text vectors are just quantitative representations of texts; e.g., the numbers might represent the frequency of certain words in a document or corpus.
 
-Full disclosure: the vast majority of time that you spend on text analysis will be on converting or "cleaning" your text data. Also known as **pre-processing**.
+Full disclosure: Computers need A LOT of help interpreting text as data. The vast majority of time that you spend on text analysis will be on converting or "cleaning" your text data, AKA "pre-processing."
 
 ---
 
