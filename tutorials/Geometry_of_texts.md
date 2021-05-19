@@ -14,7 +14,7 @@ A key task of the researcher who wants to do a computational text analysis is fi
 
 A central part of natural language processing involves transforming texts into vectors (or matrices). Vectors are objects that lend themselves to a variety of computational operations, making them an ideal data structure for running computational text analysis. Note that text vectors are quantitative representations of qualitative information. Below, we'll see how to vectorize texts and what kinds of tools can be applied once we make this conversion.
 
-![dtm_workflow](dtm_workflow.png "Converting Texts to Vectors")*Converting Texts to Vectors* 
+![dtm_workflow](dtm_workflow.png)*Converting Texts to Vectors* 
 
 Full disclosure: Computers need A LOT of help interpreting text as data. The vast majority of time that you spend on text analysis will be on converting or "cleaning" your text data, AKA "pre-processing."
 
