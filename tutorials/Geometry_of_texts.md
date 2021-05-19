@@ -129,7 +129,7 @@ A dtm is a matrix that represents the frequency of terms (words) that occur in a
 - rows correspond to documents in the corpus
 - columns correspond to terms
 
-![dtm_workflow](dtm_workflow)
+![dtm_workflow](dtm_workflow.png)*From Texts to DTM* 
 
 
 Each cell, then, is the number of times word j occurs in document i. As such, each row is a vector of term counts that represents the content of the document corresponding to that row. For instance if one has the following two (short) document
