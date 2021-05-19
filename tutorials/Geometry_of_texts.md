@@ -120,11 +120,18 @@ filename
 
 ## Creating a document-term matrix
 
-In order to perform machine learning on text documents, we first need to turn our text content into numerical feature vectors. 
+This corpus has several autocratic constitutions---too many to display all at once (imagine opening all of these documents on your computer...I already have too many tabs open). What's an efficient way of summarizing our ENTIRE autocratic constitutions corpus at once? 
 
-Word (or n-gram) frequencies are typical units of analysis when working with text collections. It may come as a surprise that reducing a text to a list of word frequencies retains useful information, but practice has shown this to be the case. Treating texts as a list of word frequencies (a vector) also makes available a vast range of mathematical tools developed for studying and manipulating vectors.
+We could create a **document-term matrix** (dtm).
 
-In what follows, we will be working with the [CountVectorizer](http://scikit-learn.sourceforge.net/dev/modules/generated/sklearn.feature_extraction.text.CountVectorizer.html) class from the scikit-learn package. CountVectorizer gather word frequencies (or term frequencies) associated with texts into a document-term matrix.
+A dtm is a matrix that shows the frequency of terms that occur in a collection of documents (corpus). 
+
+- rows correspond to documents in the corpus
+- columns correspond to terms
+
+Each ij cell, then, is the number of times word j occurs in document i. As such, each row is a vector of term counts that represents the content of the document corresponding to that row. For instance if one has the following two (short) document
+
+We will be working with the [CountVectorizer](http://scikit-learn.sourceforge.net/dev/modules/generated/sklearn.feature_extraction.text.CountVectorizer.html) class from the scikit-learn package. CountVectorizer gather word frequencies (or term frequencies) associated with texts into a document-term matrix.
 
 ## Texts as vectors and matrices
 
@@ -132,7 +139,7 @@ What does this vector look like? The most intuitive approach uses the bag of wor
 
 - Create a dictionary of word features that assigns an integer ID to each word ( *W* ) occurring in any document, _d_
 
-- For each document ( _i_ ), count the number of occurrences of each word ( *W* ) 
+- For each document _i_, count the number of occurrences of each word ( *W* ) 
 
 - Create a vector X_d[ *i, j* ], where _i_ counts the number of times each word from the dictionary appears in a given document, d, and *j* is the index of that word in the dictionary of word features
 
