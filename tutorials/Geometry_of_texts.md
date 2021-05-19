@@ -8,13 +8,13 @@ nav_order: 2
 
 # Vectorizing Texts
 
-When computers "read" texts, they aren't reading them the same way that humans do. Computers are actually interpreting texts as [string bits](https://groups.csail.mit.edu/mac/ftpdir/scheme-7.4/doc-html/scheme_10.html), wherein bits are binary code (1, 0). This information provides the computer with instructions for displaying text, sound, or images; but being able to process 1s and 0s doesn't mean a computer literally understands the _meaning_ or _content_ of these data---at least not in the same way that humans do.
+When computers "read" texts, they aren't reading them the same way that humans do. Computers are actually interpreting texts as [string bits](https://groups.csail.mit.edu/mac/ftpdir/scheme-7.4/doc-html/scheme_10.html), i.e. binary code (1, 0). This information provides the computer with instructions for displaying text, sound, or images, but this doesn't mean a computer literally understands the _meaning_ or _content_ of these data---at least not in the same way that humans do.
 
 A key task of any computational text analysis is first finding a way to convert the complexity of human language into terms that a computer can actually understand. This is what **natural language processing** means: converting human language to computer language such that the computer reads texts like a human would.
 
 To this end, natural language processing involves transforming texts into vectors (or matrices). Vectors are objects that lend themselves to a variety of computational operations in Python, making them an ideal data structure for running computational text analysis. Remember that text vectors are just quantitative representations of qualitative information---it's a translation of our texts into a format that our computer is able to read. 
 
-Here's what this process looks like in practice:
+We can visualize this as a 3-step process:
 
 ![dtm_workflow](dtm_workflow.png)*Converting Texts to Vectors* 
 
@@ -122,20 +122,20 @@ filename
 
 
 
-## Creating a document-term matrix
+## Creating a term-document matrix
 
 What's an efficient way of summarizing our corpus? 
 
-We could create a **document-term matrix** (dtm).
+We could create a **term-document matrix** (AKA document-term matrix).
 
-A dtm is a matrix that represents the frequency of terms (words) that occur in a particular collection of documents. 
+A term-document matrix represents the frequency of terms (words) that occur in a particular collection of documents. 
 
-- rows correspond to documents in the corpus
-- columns correspond to terms
+- columns correspond to documents in the corpus
+- rows correspond to terms
+
+Each cell in the matrix represents a measure of how many times a particular word (column) appears in a particular document (row). This measure might be a simple term count or a weighted average (usually weighted by the total number of terms).
 
 
-
-Each cell, then, is the number of times word j occurs in document i. As such, each row is a vector of term counts that represents the content of the document corresponding to that row. For instance if one has the following two (short) document
 
 We will be working with the [CountVectorizer](http://scikit-learn.sourceforge.net/dev/modules/generated/sklearn.feature_extraction.text.CountVectorizer.html) class from the scikit-learn package. CountVectorizer gather word frequencies (or term frequencies) associated with texts into a document-term matrix.
 
