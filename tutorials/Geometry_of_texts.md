@@ -126,16 +126,20 @@ filename
 
 What's an efficient way of summarizing our corpus? 
 
-We could create a **term-document matrix** (AKA document-term matrix).
+We could create a **document-term matrix** (AKA term-document matrix, depending on how you sort your rows and columns).
 
-A term-document matrix represents the frequency of terms (words) that occur in a particular collection of documents. 
+A document-term matrix represents the frequency of terms (words) that occur in a particular collection of documents. 
 
-- columns correspond to documents in the corpus
-- rows correspond to terms
+- rows correspond to documents in the corpus
+- documents correspond to terms 
+
+(Note: for a term-document matrix, the order is reversed)
 
 Each cell in the matrix represents a measure of how many times a particular word (column) appears in a particular document (row). This measure might be a simple term count or a weighted average (usually weighted by the total number of terms).
 
+To get an intuition behind this set-up, look at the following example:
 
+![docs_matrix](docs_matrix.png)
 
 We will be working with the [CountVectorizer](http://scikit-learn.sourceforge.net/dev/modules/generated/sklearn.feature_extraction.text.CountVectorizer.html) class from the scikit-learn package. CountVectorizer gather word frequencies (or term frequencies) associated with texts into a document-term matrix.
 
