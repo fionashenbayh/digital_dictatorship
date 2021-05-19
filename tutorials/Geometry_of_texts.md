@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Vectorizing Texts
+title: 2. Vectorizing Texts
 permalink: /tutorials/Geometry_of_texts/
 parent: Tutorials
 nav_order: 2
@@ -30,7 +30,7 @@ In what follows, we will see how to:
 
 ---
 
-Let's get started by importing a corpus of autocratic constitutions. In particular, this corpus includes constitutions for postcolonial African one-party regimes.
+Let's get started by importing a corpus of autocratic [constitutions](https://github.com/fionashenbayh/digital_dictatorship/tree/master/Constitutions). In particular, this corpus includes constitutions for postcolonial African one-party regimes.
 
 
 ```python
