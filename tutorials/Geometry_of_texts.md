@@ -143,7 +143,7 @@ Is this a reasonable way to summarize a corpus of texts? Perhaps. The answer to 
 
 ## Creating the document-term matrix
 
-There are lots of existing packages that will generate a document-term matrix from an existing corpus. We will be working with the [CountVectorizer](http://scikit-learn.sourceforge.net/dev/modules/generated/sklearn.feature_extraction.text.CountVectorizer.html) class from the scikit-learn package.
+There are lots of existing packages that will generate a document-term matrix for you. We will be working with the [CountVectorizer](http://scikit-learn.sourceforge.net/dev/modules/generated/sklearn.feature_extraction.text.CountVectorizer.html) class from the scikit-learn package.
 
 ```python
 import numpy as np  # a conventional alias for numpy, this package allows us to perform array operations on our matrix
