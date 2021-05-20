@@ -320,7 +320,9 @@ print(dtm)
 
 
 
-What do all of these numbers mean? Where are the terms from our vocabulary? What we're looking at here is a special type of matrix object: a sparse matrix.
+What do all of these numbers mean? Where did all of the terms from our vocabulary go?  
+
+All of our vocabulary terms are actually represented here. But what we're looking at is a special type of matrix object: a sparse matrix.
 
 
 ```python
