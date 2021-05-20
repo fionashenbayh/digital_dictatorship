@@ -178,7 +178,7 @@ vocab = vectorizer.get_feature_names()  # a list
 
 And that's it! We now have a document-term matrix `dtm` and a vocabulary list `vocab`! 
 
-Let's take a look at what we have created, starting with its dimensions.
+Let's take a look at what we have created, starting with its dimensions. What do you notice about the dimensions of this matrix?
 
 ```python
 dtm.shape 
@@ -190,8 +190,7 @@ dtm.shape
     (56, 2564)
 
 
-What do you notice about the dimensions of this matrix?
-
+And what do you notice about the length of the vocab?
 
 ```python
 type(vocab), len(vocab)
@@ -203,7 +202,6 @@ type(vocab), len(vocab)
     (list, 2564)
 
 
-And what do you notice about the length of the vocab?
 
 ```python
 vocab
