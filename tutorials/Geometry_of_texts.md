@@ -8,6 +8,16 @@ nav_order: 2
 
 # Vectorizing Texts
 
+This tutorial explains:
+
+- how to create a document-term matrix
+
+- ways of measuring distances between texts
+
+- how to visualize differences or similarities between texts
+
+---
+
 When computers "read" texts, they aren't reading them the same way that humans do. Computers are actually interpreting texts as [string bits](https://groups.csail.mit.edu/mac/ftpdir/scheme-7.4/doc-html/scheme_10.html). This information provides the computer with instructions for displaying text, sound, or images, but this doesn't mean a computer literally understands the _meaning_ or _content_ of these data---at least not in the same way that humans do.
 
 A key task of any computational text analysis is first finding a way to convert the complexity of human language into terms that a computer can actually understand. This is what **natural language processing** means: converting human language to computer language such that the computer reads texts like a human would.
@@ -22,17 +32,6 @@ Full disclosure: Computers need A LOT of help interpreting text as data. Trust m
 
 ---
 
-In what follows, we will see how to:
-
-- create a document-term matrix
-
-- compare texts using geometry
-
-- visualize differences between texts
-
-- cluster texts based on similarity
-
----
 
 Let's get started by importing a corpus of autocratic [constitutions](https://github.com/fionashenbayh/digital_dictatorship/tree/master/Constitutions). In particular, this corpus includes constitutions for postcolonial African one-party regimes.
 
