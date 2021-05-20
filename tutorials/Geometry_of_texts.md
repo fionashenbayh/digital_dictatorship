@@ -337,7 +337,7 @@ dtm
 
 
 
-# What is a sparse matrix and why is this what CountVectorizer returns?
+### What is a sparse matrix and why is this what CountVectorizer returns?
 
 To answer this question, we have to think about how much information is actually contained in a document-term matrix. Most document-term matrices have a lot of zero values (empty cells). Why? Remember that the columns of a dtm represent the unique vocab terms _across the entire corpus_; it is highly unlikely that every document in the corpus uses exactly the same terms. And whenever a term isn't present in a document, there will be a zero entry. 
 
