@@ -229,7 +229,7 @@ Test out different values for **min_df** and rerun the CountVectorizer function.
 
 A cusory glance at the vocabulary reveals that many of the strings included as terms are just numbers. Do you want to keep these numbers in your analysis? If not, how would you adjust the CountVectorizer function to remove them?
 
-We can use regular expressions with `token_pattern`.
+We can use [regular expressions](https://www.regular-expressions.info/) with `token_pattern`.
 
 
 ```python
