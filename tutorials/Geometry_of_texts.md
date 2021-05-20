@@ -176,7 +176,7 @@ dtm = vectorizer.fit_transform(raw_documents=constitutions.abspaths())  # .abspa
 vocab = vectorizer.get_feature_names()  # a list
 ```
 
-And that's it! We now have a document-term matrix (dtm) and a vocabulary list (vocab)! 
+And that's it! We now have a document-term matrix `dtm` and a vocabulary list `vocab`! 
 
 Let's take a look at what we have created, starting with its dimensions.
 
