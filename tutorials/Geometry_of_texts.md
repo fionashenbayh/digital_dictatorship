@@ -135,7 +135,7 @@ Each cell in the matrix represents a measure of how many times a particular word
 
 To get an intuition behind this set-up, look at the following example:
 
-![docs_matrix](docs_matrix.png){ width=70% }
+![docs_matrix](docs_matrix.png)
 
 Notice above that the dimensions of the matrix are the number of documents (rows) by the total number of unique terms (columns). The number of columns of a document-term matrix is thus the length of the **corpus vocabulary.**
 
