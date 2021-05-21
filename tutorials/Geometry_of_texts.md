@@ -28,6 +28,8 @@ We can visualize this as a 3-step process:
 
 ![dtm_workflow](dtm_workflow.png)*Converting Texts to Vectors* 
 
+---
+
 Full disclosure: Computers need A LOT of help interpreting text as data. Trust me when I say that the **vast majority** of time that you spend on text analysis will be devoted to converting or "cleaning" your texts in **preparation** for analysis. We call this the "pre-processing" stage. It is a long stage.
 
 ---
@@ -225,7 +227,7 @@ vocab
 
 
 
-Test out different values for **min_df** and rerun the CountVectorizer function. How does this change the size of dtm and the vocab? Is it sensitive to small changes?
+Try re-running `CountVectorizer` using different values for **min_df**. How does this change the size of dtm and the vocab? Is it sensitive or unsensitive to small changes?
 
 A cusory glance at the vocabulary reveals that many of the strings included as terms are just numbers. Do you want to keep these numbers in your analysis? If not, how would you adjust the CountVectorizer function to remove them?
 
@@ -409,7 +411,9 @@ Looking at this dtm object, we can see how a sparse matrix is structured: there 
 
 ### Coverting to numpy array
 
-Before we keep going, let's convert our sparse matrix `dtm` into a normal NumPy array; let's also convert our vocabulary object `vocab` into a NumPy array. We do this because array objects support more operations than matrices and lists.
+Before we keep going, let's convert our sparse matrix `dtm` into a NumPy array object. Let's also convert our vocabulary object `vocab` into a NumPy array. 
+
+We do this for convenience: array objects support more operations than matrices and lists.
 
 
 ```python
@@ -460,62 +464,21 @@ print(vocab)
     ['able' 'abolish' 'abolished' ... 'years' 'youth' 'â']
 
 
-### Exploring the dtm
-With this preparatory work behind us, it's simple to make queries with our document-term matrix. Here are two ways to find out how many times the word ‘president’ appears in the first constitution.
+## What can we do with a Document-Term Matrix?
 
+Arranging our texts as a document-term matrix allows us to do a lot of comparative analysis using computational techniques.
 
-```python
-filenames[0]
-```
+For example, we can now more easily measure whether two documents are _similar_ or _different_.
 
+But how do we actuallly go about measuring this? Merely saying something is "similar/different" is a qualitative statement. But the document-term matrix is a quantitative representation of the documents in our corpus, meaning we can actually derive a quantitative measure of how similar or different texts are within the matrix.
 
+### Euclidean Distance
 
+One popular distance metric is Euclidean distance, which is calculated using Cartesian coordinates and the Pythagorean theorem. In short, the Euclidean distance between two vectors is simply the length of the hypotenuse that joins the two vectors. 
 
-    'Constitution-Kenya-1983.txt'
+![\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}](https://latex.codecogs.com/svg.latex?\Large&space;x=\frac{-b\pm\sqrt{b^2-4ac}}{2a})
 
-
-
-
-```python
-dtm[0, vocab == 'president']
-```
-
-
-
-
-    0
-
-
-
-
-```python
-dtm[1, vocab == ['president']]
-```
-
-
-
-
-    0
-
-
-
-## Comparing texts
-
-Arranging our texts as a document-term matrix allows us to do a lot of exploratory analysis using computational techniques.
-
-For example, we can now easily calculate a measure of similarity between texts. Since each row of the document-term matrix is a sequence of word frequencies for a given constitution, we can use the similarity (or distance) between sequences of numbers in order to calculate the similarity (or distance) between any two constitutions.
-
-### Euclidean distance
-
-One frequently used measure of distance between vectors (a measure easily converted into a measure of similarity) is Euclidean distance. The Euclidean distance between two vectors in a plane is the length of the hypotenuse that joins the two vectors. For instance, consider the Euclidean distance between the vectors x⃗ =(1,3)
-and y⃗ =(4,2). The distance between the two vectors is $$\sqrt{(1−4)^2+(3−2)^2} = \sqrt{10}$$.
-
-![image.png](attachment:image.png)
-
-
-Generally speaking, given two vectors x⃗ and y⃗ in p-dimensional space, the Euclidean distance between the two vectors is given by $$||x⃗ −y⃗ || = \sum_i^p\sqrt{(x_i−y_i)^2}$$
-
-Because we have now expressed the constitutions in our corpus as vectors, we can calculate the Euclidean distance between any two constitutions. Conveniently, scikit-learn already has a function that is precisely for this task.
+Using this formula, it is straightforward to calculate the pairwise distances between each document in our corpus. Fortunately Scikit-Learn already has a built-in function for this.
 
 
 ```python
