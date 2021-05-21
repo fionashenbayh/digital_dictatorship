@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Intro to Topic Modeling
+title: 3. Topic Modeling
 permalink: /tutorials/intro_to_topic_modeling/
 parent: Tutorials
 nav_order: 3
@@ -8,9 +8,9 @@ nav_order: 3
 
 # Topic Models
 
-This module provides an introduction to topic modeling.
+One of the virtues of computational text analysis is that it enables us to process huge amounts of text that would be difficult (or maybe even impossible) for a single human reader. In fact, when we're dealing with so many documents, we might not even know exactly what kind of themes, issues, or ideas are being featured. 
 
-A topic model is a type of statistical model that helps identity "topics" that occur in a collection of documents, or corpus. This approach is particularly useful for synthesizing large corpora---e.g. thousands or millions of documents---that would be otherwise difficult to synthesize by hand. Imagine trying to read all of these documents by yourself and then summarizing which topics are common or unique across all of them! Topic models are a great way to make this process more efficient by leveraging statistical properties of natural language to categorize large bodies of text.
+A **topic model** is a type of statistical model that helps identity "topics" that occur in a collection of documents, or corpus. This approach is particularly useful for synthesizing large corpora---e.g. thousands or millions of documents---that would be otherwise difficult to synthesize by hand. Imagine trying to read all of these documents by yourself and then summarizing which topics are common or unique across all of them! Topic models are a great way to make this process more efficient by leveraging statistical properties of natural language to categorize large bodies of text.
 
 The **key intuition** of a topic model is that we expect certain words to appear together in context if they refer to the same topic. 
 
@@ -38,19 +38,15 @@ logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=lo
 
 Now let's load our text data.
 
-Today we will run some topic models on a corpus of Tweets scraped from Twitter using the rtweet package in R. I did a simple search for the word "autocray" and collected the most recent 5,000 results. I then stored the output as a CSV file so I could analyze it in Python.
+Today we will run some topic models on a corpus of Tweets scraped from Twitter using the `rtweet` package in `R`. I did a simple search for the word "autocray" and collected the most recent 5,000 tweets. I then stored the output as a CSV.
 
-Here's what I did step-by-step:
-
-![Screen%20Shot%202020-10-14%20at%202.33.33%20PM.png](attachment:Screen%20Shot%202020-10-14%20at%202.33.33%20PM.png)
-
-Now let's load our tweets corpus into Python.
+First step is loading the Twitter CSV file into Python.
 
 
 ```python
 import pandas as pd
 
-file = "~/file_path_to_your_data/autocracy_tweets.csv"
+file = "~/autocracy_tweets.csv"
 
 df = pd.read_csv(file)
 ```
