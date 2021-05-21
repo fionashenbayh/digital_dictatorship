@@ -476,9 +476,9 @@ But how do we actuallly go about measuring this? Merely saying something is "sim
 
 One popular distance metric is Euclidean distance, which is calculated using Cartesian coordinates and the Pythagorean theorem. In short, the Euclidean distance between two vectors is simply the length of the hypotenuse that joins the two vectors. 
 
-![\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}](https://latex.codecogs.com/svg.latex?\Large&space;x=\frac{-b\pm\sqrt{b^2-4ac}}{2a})
+#Even if we're not dealing with two-dimensional vectors (we aren't usually dealing with two-word corpora), the basic intuition for calculating the Euclidean distances between longer vectors is the same. This means we can calculate the pairwise distances between each document in our corpus. 
 
-Using this formula, it is straightforward to calculate the pairwise distances between each document in our corpus. Fortunately Scikit-Learn already has a built-in function for this.
+Fortunately Scikit-Learn already has a built-in function for this.
 
 
 ```python
@@ -560,27 +560,24 @@ dist[1, 3] > dist[3, 4]
 
 
 
-### Cosine similarity
+### Cosine Similarity
 
-If we want to use a measure of distance that takes into consideration the length of texts, we can calculate the cosine similarity by importing sklearn.metrics.pairwise.cosine_similarity and use it in place of euclidean_distances.
+Another popular measure of comparison is cosine similarity. Many people prefer cosine similarity to Euclidean distance because the latter is sensitive to the length of texts (i.e. since the length of texts is probably going to increase the size of the vocabulary, which means you've got longer vectors and thus longer hypotheneuses). 
 
-Cosine similarity is a measure of similarity (rather than distance) that ranges between [0,1].
+Cosine similarity, by contrast, isn't sensitive to the length of texts because it's just calculating the cosine of the angle between two vectors.
 
-More specifically, it is a measure of similarity between two non-zero vectors of an inner product space that measures the cosine of the angle between them. _The smaller the angle, the higher the cosine similarity._
+Cosine similarity ranges between 0 and 1:
 
-- Two vectors with the same orientation: cosine similarity score = 1
-- Two vectors with the opposite orientation: cosine similarity score = -1
-- Two vectors with orthogonol orientation (independent): cosine similarity score = 0
+- cos(&theta;) = 1: two vectors have the same orientation, i.e. texts are identical 
+- cos(&theta;) = -1: two vectors have opposite oritentation, i.e. texts are exact opposites
+- cos(&theta;) = -0: Two vectors with orthogonol orientation, i.e. texts are completely independent
 
-Cosine similarity is useful because it isn't sensitive to the length of documents. This sets it apart from the Euclidean distance metric. 
-
-To measure distance (or dissimilarity), we can invert our cosine similarity score by substracting it from 1. This conversion ensure that larger angles receive higher values (i.e. greater distances).
 
 
 ```python
 from sklearn.metrics.pairwise import cosine_similarity
 
-dist = 1 - cosine_similarity(dtm)
+dist = cosine_similarity(dtm)
 
 np.round(dist, 2)
 ```
@@ -619,13 +616,13 @@ dist[1, 3] > dist[3, 4]
 
 
 
-### Visualizing distances
+### Visualizing Distances
 
 Once we vectorize our texts, we can plot them in vector space. Doing so let's us **visualize distances** between texts. 
 
 The problem is a text vector could have hundreds, thousands, or even more dimensions (think of the length of the vector).
 
-We can't (and shouldn't) try to plot these huge, multi-dimensional vectors. What we can do, however, is reshape them into more easily plotted objects.
+We shouldn't even try to plot these huge, multi-dimensional vectors (the point of visualizing data is to make it more legible, not less!). But what we can do is reshape these huge vectors into more easily plotted objects.
 
 This is called **multidimensional scaling (MDS)**. MDS essentially transforms the information about the pairwise 'distances' among a corpus of $n$ texts into a configuration of $n$ points that can be mapped into an abstract Cartesian space.
 
