@@ -8,6 +8,14 @@ nav_order: 3
 
 # Topic Models
 
+This tutorial covers:
+
+- how to load a corpus into Python as a datafame
+- ways of describing document meta-variables
+- how to summarize a corpus with unsupervised machine learning 
+
+---
+
 One of the virtues of computational text analysis is that it enables us to process huge amounts of text that would be difficult (or maybe even impossible) for a single human reader. In fact, when we're dealing with so many documents, we might not even know exactly what kind of themes, issues, or ideas are being featured. 
 
 A **topic model** is a type of statistical model that helps identity "topics" that occur in a collection of documents, or corpus. This approach is particularly useful for synthesizing large corpora---e.g. thousands or millions of documents---that would be otherwise difficult to synthesize by hand. Imagine trying to read all of these documents by yourself and then summarizing which topics are common or unique across all of them! Topic models are a great way to make this process more efficient by leveraging statistical properties of natural language to categorize large bodies of text.
