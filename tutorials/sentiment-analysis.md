@@ -8,7 +8,7 @@ nav_order: 5
 
 # Sentiment Analysis
 
-One of the most fascinating applications of natural language processing is sentiment analysis: evaluating the opinions, attitudes, or emotive content of texts. Also known as opinion mining or emotion Aritificial Intelligence (AI), this type of computational analysis has a variety of applications in socisl science research as well as private industry, most notably with regards to social media and marketing. 
+One of the most fascinating applications of natural language processing is sentiment analysis: evaluating the opinions, attitudes, or emotive content of texts. Also known as opinion mining or emotion Aritificial Intelligence (AI), this type of computational analysis has a variety of applications in [social science research](https://hedonometer.org/about.html) as well as [private industry](https://www.wired.com/2014/06/everything-you-need-to-know-about-facebooks-manipulative-experiment/). 
 
 Howver, sentiment analysis is among the most challenging types of natural language processing because of the way that sentiment is expressed in the written word. That is, the complexities of human language enable us to express extremely complex ideas and emotions in ways that are not always easy to classify with a simple algorithm. 
 
