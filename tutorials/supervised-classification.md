@@ -274,7 +274,7 @@ test_names = labeled_names[:500]
 
 The training set is used to train the model and the dev-test set is used to perform error analysis. Note: it is important that we employ a separate dev-test set for error analysis rather than just using the test set. The division of the corpus data into different subsets is shown below.
 
-![corpusworkflow](corpus_workflow.png)
+![corpusworkflow](corpus_workflow)
 
 We train a model using the training set [1], and then run it on the dev-test set [2]:
 
