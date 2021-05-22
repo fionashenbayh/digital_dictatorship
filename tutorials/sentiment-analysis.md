@@ -18,9 +18,9 @@ To illustrate why this is the case, let's start with some simple examples:
 - This industry was the best economic performer in 2020.
 - I hate feeling tired.
 
-Each of these phrases seems to convey only one sentiment as indicated by terms like "public support", "best", and "hate". We thus might write an algorithm instruction our computer to label texts as positive or negative based on whether such terms appear in a phrase.
+Each of these sentences conveys a single sentiment as indicated by terms like "public support", "best", and "hate". We thus might write a simple classification algorithm that instructs our computer to label sentences as **positive** or **negative** based on whether such terms are used.
 
-But what about more complex phrases?
+But what about more complex sentences?
 
 - President Otto Krat lacks popular support.
 - She wasn't opposed to the plan, but she wasn't a fan of it, either.
