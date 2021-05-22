@@ -1,18 +1,18 @@
 ---
 layout: page
-title: 3. Topic Modeling
+title: 3. Unsupervised Machine Learning
 permalink: /tutorials/intro_to_topic_modeling/
 parent: Tutorials
 nav_order: 3
 ---
 
-# Topic Models
+# Unsupervised Machine Learning: Topic Models
 
 This tutorial covers:
 
 - how to load a corpus into Python as a datafame
 - ways of describing document meta-variables
-- how to summarize a corpus with unsupervised machine learning 
+- how to summarize a corpus with unsupervised machine learning (topic modeling)
 
 ---
 
