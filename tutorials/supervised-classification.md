@@ -1,4 +1,12 @@
-# Supervised Classification
+---
+layout: page
+title: 4. Supervised Machine Learning
+permalink: /tutorials/supervised-classification/
+parent: Tutorials
+nav_order: 4
+---
+
+# Supervised Machine Learning: Classification
 
 Classification is the task of choosing the 'correct' label for an input. Supervised classification refers to a labeling task where the **labels** are **defined in advance** (this is in contrast to unsupervised classification, e.g. topic modeling, where the labels are not predefined). Some examples of supervised classification include:
 
