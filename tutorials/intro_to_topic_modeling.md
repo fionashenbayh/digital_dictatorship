@@ -1,12 +1,12 @@
 ---
 layout: page
-title: 3. Unsupervised Machine Learning
+title: 3. Topic Models
 permalink: /tutorials/intro_to_topic_modeling/
 parent: Tutorials
 nav_order: 3
 ---
 
-# Unsupervised Machine Learning: Topic Models
+# Topic Models
 
 This tutorial covers:
 
