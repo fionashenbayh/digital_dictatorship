@@ -1,4 +1,12 @@
-# Supervised Classification
+---
+layout: page
+title: 4. Classification
+permalink: /tutorials/supervised-classification/
+parent: Tutorials
+nav_order: 4
+---
+
+# Text Classification
 
 Classification is the task of choosing the 'correct' label for an input. Supervised classification refers to a labeling task where the **labels** are **defined in advance** (this is in contrast to unsupervised classification, e.g. topic modeling, where the labels are not predefined). Some examples of supervised classification include:
 
@@ -266,7 +274,7 @@ test_names = labeled_names[:500]
 
 The training set is used to train the model and the dev-test set is used to perform error analysis. Note: it is important that we employ a separate dev-test set for error analysis rather than just using the test set. The division of the corpus data into different subsets is shown below.
 
-![image.png](attachment:image.png)
+![corpusworkflow](corpus_workflow.png)
 
 We train a model using the training set [1], and then run it on the dev-test set [2]:
 
