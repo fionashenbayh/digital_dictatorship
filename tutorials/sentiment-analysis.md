@@ -1,23 +1,36 @@
-```python
-#THIS IS AN INSERTED EDIT, JL
+---
+layout: page
+title: 5. Sentiment Analysis
+permalink: /tutorials/sentiment-analysis/
+parent: Tutorials
+nav_order: 5
+---
 
-# This Python 3 environment comes with many helpful analytics libraries installed
-# It is defined by the kaggle/python docker image: https://github.com/kaggle/docker-python
-# For example, here's several helpful packages to load in 
+# Sentiment Analysis
 
-import numpy as np # linear algebra
-import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
+One of the most fascinating applications of natural language processing is sentiment analysis: evaluating the opinions, attitudes, or emotive content of texts. Also known as opinion mining or emotion Aritificial Intelligence (AI), this type of computational analysis has a variety of applications in socisl science research as well as private industry, most notably with regards to social media and marketing. 
 
-# Input data files are available in the "../input/" directory.
-# For example, running this (by clicking run or pressing Shift+Enter) will list all files under the input directory
+Howver, sentiment analysis is among the most challenging types of natural language processing because of the way that sentiment is expressed in the written word. That is, the complexities of human language enable us to express extremely complex ideas and emotions in ways that are not always easy to classify with a simple algorithm. 
 
-import os
-for dirname, _, filenames in os.walk('/kaggle/input'):
-    for filename in filenames:
-        print(os.path.join(dirname, filename))
+To illustrate why this is the case, let's start with some simple examples:
 
-# Any results you write to the current directory are saved as output.
-```
+- This welfare policy has wide public support.
+- This industry was the best economic performer in 2020.
+- I hate feeling tired.
+
+Each of these phrases seems to convey only one sentiment as indicated by terms like "public support", "best", and "hate". We thus might write an algorithm instruction our computer to label texts as positive or negative based on whether such terms appear in a phrase.
+
+But what about more complex phrases?
+
+- President Otto Krat lacks popular support.
+- She wasn't opposed to the plan, but she wasn't a fan of it, either.
+- Great idea, genius.
+
+The first sentence uses the phrase "popular support" but it's _negated_, meaning if we were just instructing our computer to look for instances of positive phrases, this sentence might be miscategorized as positive. The second sentence is even trickier because there are lots of positive and negative terms being used ("opposed", "fan") but the overarching sentiment is kind of in the middle -- it's neither positive nor negative. The final sentence is the trickiest of all, because it seems to be sarcastic. Whether this sentence is genuine or tongue-in-cheek will depend a lot on subtext, which is something a human reader can more easily pick up on than a computer.
+
+Grappling with the nuances of human language in a computational environment is a perrennial challenge of sentiment analysis. But the only way to improve is to test things out and iteratively improve. So to that end, let's get started with some existing sentiment analysis packages that show the incredible power of these tools as well as their limitations.
+
+---
 
 ### TextBlob
 
