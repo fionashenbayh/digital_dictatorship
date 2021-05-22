@@ -687,7 +687,7 @@ classifier.show_most_informative_features(10)
 
 # Example using Naive Bayes Classification
 
-Let's run some classification tasks using the Supreme Court confirmation hearings transcripts, found here: [https://www.rstreet.org/2019/04/04/supreme-court-confirmation-hearing-transcripts-as-data/](http://)
+Let's run some classification tasks using the Supreme Court confirmation [hearings transcripts](https://www.rstreet.org/2019/04/04/supreme-court-confirmation-hearing-transcripts-as-data/)
 
 This data contains the text of every Supreme Court confirmation hearing for which Senate Judiciary Committee  transcripts are available (beginning in 1971 with hearings for Lewis Powell and William Rehnquist and concluding with Neil Gorsuch’s 2017 hearing). 
 
