@@ -370,9 +370,9 @@ w.spellcheck()
 
  TextBlob also has a built-in sentiment analyzer. The sentiment property returns a named tuple of the form Sentiment(polarity, subjectivity). 
 
-* The **polarity score** is a float within the range [-1.0, 1.0] $\rightarrow$ 1.0 is very negative and 1.0 is very positive.
+* The **polarity score** is a float within the range [-1.0, 1.0] &rarr; 1.0 is very negative and 1.0 is very positive.
 
-* The **subjectivity score** is a float within the range [0.0, 1.0] $\rightarrow$ 0.0 is very objective and 1.0 is very subjective; subjectivity is a measure of the extent to which something expressed is a subjective opinion or an objective fact.
+* The **subjectivity score** is a float within the range [0.0, 1.0] &rarr; 0.0 is very objective and 1.0 is very subjective; subjectivity is a measure of the extent to which something expressed is a subjective opinion or an objective fact.
 
 
 ```python
@@ -643,7 +643,7 @@ How does VADER's built-in sentiment analyzer compare with TextBlob's built-in se
 
 
 ```python
-get_vader_score(text), get_textBlob_score(text)
+get_vader_score(text)
 ```
 
     compound: -0.8591, 
@@ -661,7 +661,9 @@ get_vader_score(text), get_textBlob_score(text)
 
 
 
-
+```python
+get_textBlob_score(text)
+```
 
     (None, [-1.0, -0.075, -0.05])
 
