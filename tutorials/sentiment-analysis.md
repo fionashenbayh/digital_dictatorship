@@ -14,11 +14,11 @@ Howver, sentiment analysis is among the most challenging types of natural langua
 
 To illustrate why this is the case, let's start with some simple examples:
 
-- This welfare policy has wide public support.
-- This industry was the best economic performer in 2020.
-- I hate feeling tired.
+- This welfare policy enjoys wide public support.
+- My mom makes the best dumplings.
+- I hate mosquitoes.
 
-Each of these sentences conveys a single sentiment as indicated by terms like "public support", "best", and "hate". We thus might write a simple classification algorithm that instructs our computer to label sentences as **positive** or **negative** based on whether such terms are used.
+Each of these sentences conveys a single sentiment as indicated by terms like "public support", "enjoys", "best", and "hate". We thus might write a simple classification algorithm that instructs our computer to label sentences as **positive** or **negative** based on whether such terms are used.
 
 But what about more complex sentences?
 
