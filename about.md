@@ -6,7 +6,7 @@ nav_order: 1
 ---
 
 ![archive](images/IMG_4205.JPG)
-
+<img src="images/IMG_4205.JPG" width="200" height="200" />
 
 ## Course Overview
 
