@@ -5,8 +5,8 @@ permalink: /about/
 nav_order: 1
 ---
 
-![test](/images/IMG_4205.JPG){:height="50%" width="50%"}
-![test](/images/IMG_4191.JPG){:height="50%" width="50%"}
+![test](/images/IMG_4205.JPG){:height="25%" width="25%"}
+![test](/images/IMG_4191.JPG){:height="25%" width="25%"}
 
 <img src="/images/IMG_4205.JPG" width="200" height="300" />
 <img src="/images/IMG_4191.JPG" width="200" height="300" />
