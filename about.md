@@ -5,8 +5,8 @@ permalink: /about/
 nav_order: 1
 ---
 
-<img src="/images/IMG_4205.JPG" width="200" height="300" />
-<img src="/images/IMG_4191.JPG" width="200" height="300" />
+<img src="site.baseurl/images/IMG_4205.JPG" width="200" height="300" />
+<img src="site.baseurl/images/IMG_4191.JPG" width="200" height="300" />
 
 ## Course Overview
 
