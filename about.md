@@ -5,6 +5,9 @@ permalink: /about/
 nav_order: 1
 ---
 
+![archive](images/IMG_4205.JPG)
+
+
 ## Course Overview
 
 Dictatorship is one of the oldest forms of governance in the world. In fact, theories of autocratic rule have long informed our understanding of power, violence, and inequality, in both dictatorships and democracies alike. But modern technologies have complicated the ways in which dictatorships operate and presented new opportunities to study these regimes from different vantage points. 
