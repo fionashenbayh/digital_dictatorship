@@ -13,7 +13,7 @@ header_pages:
   - intro_to_topic_modeling.md
   - resources.md
 
-baseurl: /digital_dictatorship
+baseurl: /digital_dictatorship/
 
 # Information about where the book exists on the web
 repository:
