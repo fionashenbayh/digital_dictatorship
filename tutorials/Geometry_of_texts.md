@@ -608,17 +608,17 @@ dist[1, 3] > dist[3, 4]
 
 ### Visualizing Distances
 
-Once we vectorize our texts, we can plot them in vector space. Doing so let's us **visualize distances** between texts. 
+Once we vectorize our texts, we can plot them in vector space. This lets us **visualize distances** between texts. 
 
-The problem is a text vector could have hundreds, thousands, or even more dimensions (think of the length of the vector).
+However, a text vector could have hundreds, thousands, or even more dimensions (the number of dimensions is equal to the size of the vocabulary).
 
-We shouldn't even try to plot these huge, multi-dimensional vectors (the point of visualizing data is to make it more legible, not less!). But what we can do is reshape these huge vectors into more easily plotted objects.
+We shouldn't try to plot these huge, multi-dimensional vectors because the whole point of visualizing data is to make it more legible, not less! What we can do instead is try to reshape these huge vectors into more easily plotted objects.
 
-This is called **multidimensional scaling (MDS)**. MDS essentially transforms the information about the pairwise 'distances' among a corpus of $n$ texts into a configuration of $n$ points that can be mapped into an abstract Cartesian space.
+Ideally, we want to assign a 2-dimensional point to each text in our corpus, while making sure that the distance between each of these points is proportional to the pairwise distances between each text.
 
-In other words, we want to assign a 2-dimensional point to each text in our corpus, while making sure that the distance between each of these points is proportional to the pairwise distances between each text.
+There's actually a term for this process: **multidimensional scaling (MDS)**. MDS transforms the information about the pairwise 'distances' among a corpus of $n$ texts into a configuration of $n$ points that can be mapped into an abstract Cartesian space.
 
-Thankfully there are pre-built MDS functions in Scikit-learn.
+Thankfully there is an existing MDS function in Scikit-learn.
 
 
 ```python
